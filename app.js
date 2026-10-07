@@ -412,6 +412,14 @@
       if (v !== 'near') { state.sort = v; render(); return; }
       locate(false, function () { e.target.value = state.sort; });
     });
+    $('bookToggle').addEventListener('click', function () {
+      var open = $('bookForm').hidden;
+      $('bookForm').hidden = !open;
+      $('bookNote').hidden = !open;
+      this.setAttribute('aria-expanded', String(open));
+      if (open) $('bookQ').focus();
+      if (map) setTimeout(function () { map.invalidateSize(); }, 50);
+    });
     $('closeDetail').addEventListener('click', closeDetail);
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
     document.querySelectorAll('.tabs button').forEach(function (b) {

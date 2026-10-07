@@ -99,6 +99,25 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
   font-size: 14px;
 }
 
+.book-toggle {
+  margin-left: auto; border: 0; cursor: pointer; font-size: 14px; font-weight: 600;
+  padding: 6px 14px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent);
+}
+.book-toggle[aria-expanded="true"] { background: var(--accent); color: #fff; }
+.book-form { display: flex; gap: 8px; margin-top: 10px; }
+.book-form[hidden], .book-note[hidden] { display: none; }
+.book-form input[type="search"] {
+  flex: 1; min-width: 0; border: 0; outline: none; border-radius: 12px; padding: 11px 14px;
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+}
+.book-form input[type="search"]:focus { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+.book-form button {
+  border: 0; border-radius: 12px; padding: 0 18px; font-weight: 600; cursor: pointer;
+  background: var(--accent); color: #fff;
+}
+.book-note { margin: 6px 2px 0; font-size: 12px; color: var(--sub); }
+
 /* ---------- 본문 ---------- */
 .main { flex: 1; min-height: 0; position: relative; display: flex; }
 .panel { min-width: 0; }
@@ -234,6 +253,7 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
   .title-row { margin: 0; }
   .chips { margin: 0; }
   .row { width: 300px; }
+  .book-form, .book-note { grid-column: 1 / -1; margin-top: 0; }
   .main { flex-direction: row; }
   .list-panel { flex: none; width: 400px; padding-bottom: 24px; border-right: 1px solid var(--line); }
   .map-panel { display: block; flex: 1; }
