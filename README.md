@@ -6,7 +6,7 @@
 
 | 파일 | 역할 |
 |---|---|
-| `index.html`, `style.css`, `app.js` | 화면 (Leaflet + OpenStreetMap/CARTO 지도, 키 불필요) |
+| `index.html`, `style.css`, `app.js` | 화면 (Leaflet + OpenStreetMap 지도, 키 불필요) |
 | `data/libraries.json` | 공공데이터포털 「전국도서관표준데이터」에서 추린 부산 도서관 (자동 생성) |
 | `data/extras.json` | 부대시설·한 줄 특징·사진 출처 등 직접 채우는 정보 |
 | `data/tags.json` | 목적별(공부·작업·독서·취미) 부대시설 태그 목록 |
