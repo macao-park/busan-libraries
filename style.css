@@ -214,6 +214,15 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 .stat span { color: var(--sub); font-size: 12px; }
 
 .leaflet-container { font-family: inherit; }
+.leaflet-top.leaflet-right .locate-btn { margin: 10px 10px 0 0; }
+.locate-btn {
+  display: grid; place-items: center; width: 40px; height: 40px;
+  border: 0; border-radius: 12px; cursor: pointer;
+  background: var(--card); color: var(--accent);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+}
+.locate-btn.busy { animation: pulse 1s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .4; } }
 @media (prefers-color-scheme: dark) {
   .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.92) contrast(.9); }
 }

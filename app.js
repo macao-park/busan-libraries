@@ -16,7 +16,7 @@
   /* ---------- 상태 ---------- */
   var libs = [];
   var state = { q: '', types: new Set(DEFAULT_ON), district: '', sort: 'name', pos: null, sel: null };
-  var map, layer, markers = {}, needFit = true;
+  var map, layer, userLayer, markers = {}, needFit = true;
 
   var $ = function (id) { return document.getElementById(id); };
   var app = $('app');
@@ -335,6 +335,55 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     layer = L.layerGroup().addTo(map);
+    userLayer = L.layerGroup().addTo(map);
+
+    var Locate = L.Control.extend({
+      options: { position: 'topright' },
+      onAdd: function () {
+        var b = L.DomUtil.create('button', 'locate-btn');
+        b.type = 'button';
+        b.id = 'locateBtn';
+        b.title = '내 위치';
+        b.setAttribute('aria-label', '내 위치로 이동');
+        b.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="12" r="8"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></svg>';
+        L.DomEvent.disableClickPropagation(b);
+        L.DomEvent.on(b, 'click', function () { locate(true); });
+        return b;
+      }
+    });
+    new Locate().addTo(map);
+  }
+
+  /* 내 위치: 위치 확인 → 지도에 표시 + 가까운 순 정렬 */
+  function locate(pan, onFail) {
+    var btn = $('locateBtn');
+    if (!navigator.geolocation) {
+      alert('이 브라우저에서는 위치 기능을 쓸 수 없어요.');
+      if (onFail) onFail();
+      return;
+    }
+    if (btn) btn.classList.add('busy');
+    navigator.geolocation.getCurrentPosition(function (p) {
+      if (btn) btn.classList.remove('busy');
+      state.pos = { lat: p.coords.latitude, lng: p.coords.longitude };
+      state.sort = 'near';
+      $('sort').value = 'near';
+      userLayer.clearLayers();
+      L.circle([state.pos.lat, state.pos.lng], {
+        radius: Math.min(p.coords.accuracy || 0, 1500), color: '#0a84ff', weight: 1, fillColor: '#0a84ff', fillOpacity: 0.12, interactive: false
+      }).addTo(userLayer);
+      L.circleMarker([state.pos.lat, state.pos.lng], {
+        radius: 8, color: '#ffffff', weight: 3, fillColor: '#0a84ff', fillOpacity: 1, interactive: false
+      }).addTo(userLayer);
+      render();
+      if (pan) map.setView([state.pos.lat, state.pos.lng], 14);
+    }, function (err) {
+      if (btn) btn.classList.remove('busy');
+      alert(err && err.code === 1
+        ? '위치 권한이 꺼져 있어요. 브라우저 설정에서 이 사이트의 위치 접근을 허용해 주세요.'
+        : '현재 위치를 확인하지 못했어요. 잠시 후 다시 시도해 주세요.');
+      if (onFail) onFail();
+    }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
   }
 
   function setTab(tab) {
@@ -361,15 +410,7 @@
     $('sort').addEventListener('change', function (e) {
       var v = e.target.value;
       if (v !== 'near') { state.sort = v; render(); return; }
-      if (!navigator.geolocation) { alert('이 브라우저에서는 위치 기능을 쓸 수 없어요.'); e.target.value = state.sort; return; }
-      navigator.geolocation.getCurrentPosition(function (p) {
-        state.pos = { lat: p.coords.latitude, lng: p.coords.longitude };
-        state.sort = 'near';
-        render();
-      }, function () {
-        alert('위치 권한이 없어 가까운 순 정렬을 사용할 수 없어요.');
-        e.target.value = state.sort;
-      }, { timeout: 8000 });
+      locate(false, function () { e.target.value = state.sort; });
     });
     $('closeDetail').addEventListener('click', closeDetail);
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
