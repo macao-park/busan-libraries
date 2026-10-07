@@ -330,11 +330,9 @@
   /* ---------- 지도 ---------- */
   function initMap() {
     map = L.map('map', { zoomControl: true, preferCanvas: true }).setView([35.18, 129.07], 11);
-    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/' + (dark ? 'dark_all' : 'light_all') + '/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      subdomains: 'abcd',
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     layer = L.layerGroup().addTo(map);
   }

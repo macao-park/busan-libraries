@@ -214,6 +214,9 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 .stat span { color: var(--sub); font-size: 12px; }
 
 .leaflet-container { font-family: inherit; }
+@media (prefers-color-scheme: dark) {
+  .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.92) contrast(.9); }
+}
 .pop { font-weight: 600; }
 
 /* ---------- 데스크톱 ---------- */
