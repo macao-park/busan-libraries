@@ -89,6 +89,27 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 }
 .chip input:checked + span::before { opacity: 1; }
 .chip input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* 검색 + 필터 버튼 */
+.search-row { display: flex; gap: 8px; }
+.search-row .search { flex: 1; min-width: 0; }
+.filter-btn {
+  flex: none; display: flex; align-items: center; gap: 6px;
+  border: 0; border-radius: 12px; padding: 0 16px; cursor: pointer; font-weight: 600; font-size: 14px;
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+}
+.filter-n {
+  min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-size: 12px; line-height: 20px; text-align: center;
+}
+.filter-n[hidden], .chips[hidden] { display: none; }
+.chips.purposes { margin-top: 0; }
+.chips.wrap { flex-wrap: wrap; overflow: visible; margin: 0; }
+.chip i { font-style: normal; font-size: 12px; opacity: .6; }
+.chip.zero span { opacity: .45; }
+.chip.purpose span { padding: 8px 18px; font-weight: 600; color: var(--text); }
+.chip.purpose span::before, .sheet .chip span::before { display: none; }
+.chip.purpose input:checked + span { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip.purpose input:checked + span i { opacity: .85; }
 .row { display: flex; gap: 8px; }
 .row select {
   flex: 1; min-width: 0;
@@ -152,6 +173,13 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 .meta { color: var(--sub); font-size: 13px; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .line2 { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 13px; color: var(--sub); }
 .dist { margin-left: auto; color: var(--sub); font-size: 13px; white-space: nowrap; align-self: flex-end; }
+
+.meta.hl { color: var(--accent); font-weight: 500; }
+.mini { display: flex; gap: 4px; margin-top: 6px; overflow: hidden; }
+.mini span {
+  flex: none; font-size: 11px; padding: 1px 8px; border-radius: 999px; white-space: nowrap;
+  background: var(--bg); color: var(--sub);
+}
 
 .badge {
   display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
@@ -254,13 +282,40 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 }
 .pop { font-weight: 600; }
 
+/* ---------- 필터 시트 ---------- */
+.backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .35); z-index: 900; }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; max-height: 86dvh;
+  display: flex; flex-direction: column;
+  background: var(--card); border-radius: 22px 22px 0 0;
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, .25); z-index: 1000;
+}
+.sheet[hidden], .backdrop[hidden] { display: none; }
+.sheet-head { display: flex; align-items: center; gap: 12px; padding: 18px 20px 8px; }
+.sheet-head b { flex: 1; font-size: 18px; letter-spacing: -.01em; }
+.link-btn { border: 0; background: none; color: var(--accent); cursor: pointer; font-size: 14px; padding: 4px; }
+.close-sm {
+  width: 30px; height: 30px; border-radius: 50%; border: 0; cursor: pointer;
+  background: color-mix(in srgb, var(--text) 8%, transparent); color: var(--sub);
+}
+.sheet-body { overflow-y: auto; padding: 4px 20px 16px; }
+.sheet-body .sec.first { margin-top: 8px; }
+.sheet-foot { padding: 12px 20px calc(16px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
+.sheet-foot .btn { width: 100%; border: 0; cursor: pointer; font-size: 15px; }
+.hint { font-weight: 400; font-size: 12px; margin-left: 6px; opacity: .8; }
+.tag-group-h { font-size: 13px; color: var(--sub); margin: 14px 0 8px; }
+.lead { margin: 12px 0 0; font-size: 15px; }
+.report { display: inline-block; margin-top: 12px; font-size: 13px; }
+
 /* ---------- 데스크톱 ---------- */
 @media (min-width: 900px) {
-  .top { display: grid; grid-template-columns: auto minmax(220px, 1fr) auto auto; gap: 10px 16px; align-items: center; padding: 12px 20px; }
+  .top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 20px; }
   .title-row { margin: 0; }
+  .search-row { flex: 1 1 280px; min-width: 240px; }
   .chips { margin: 0; }
-  .row { width: 300px; }
-  .book-form, .book-note { grid-column: 1 / -1; margin-top: 0; }
+  .chips.wrap { margin: 0; }
+  .book-form, .book-note { flex: 1 0 100%; margin-top: 0; }
+  .sheet { left: auto; right: 0; top: 0; bottom: 0; width: 380px; max-height: none; border-radius: 0; box-shadow: -8px 0 32px rgba(0, 0, 0, .2); }
   .main { flex-direction: row; }
   .list-panel { flex: none; width: 400px; padding-bottom: 24px; border-right: 1px solid var(--line); }
   .map-panel { display: block; flex: 1; }

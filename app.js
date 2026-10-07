@@ -13,9 +13,20 @@
   var DEFAULT_ON = ['공공도서관'];
   var DAYS = ['일', '월', '화', '수', '목', '금', '토'];
 
+  /* 정보 제보: 구글 폼을 만들었다면 아래 두 줄을 채우세요 (README 참고). 비워 두면 GitHub 이슈 폼으로 연결됩니다. */
+  var REPORT_FORM_URL = '';    // 예: 'https://docs.google.com/forms/d/e/.../viewform'
+  var REPORT_FORM_ENTRY = '';  // 도서관 이름 칸의 항목 ID, 예: 'entry.123456789'
+  var REPO = 'macao-park/busan-libraries';
+
   /* ---------- 상태 ---------- */
   var libs = [];
-  var state = { q: '', types: new Set(DEFAULT_ON), district: '', sort: 'name', pos: null, sel: null };
+  var groups = []; // data/tags.json의 목적별 태그 묶음
+  var state = {
+    q: '', types: new Set(DEFAULT_ON), district: '', sort: 'name', pos: null, sel: null,
+    purposes: new Set(), // 선택한 목적 (그 목적의 시설 중 하나라도 있으면 통과)
+    tags: new Set(),     // 꼭 있어야 하는 시설 (모두 있어야 통과)
+    auto: new Set()      // 운영·규모 조건 (모두 만족해야 통과)
+  };
   var map, layer, userLayer, markers = {}, needFit = true;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -88,6 +99,22 @@
     return { cls: 'closed', label: now.min < s ? '운영 전 · ' + today[0] + ' 시작' : '운영 종료' };
   }
 
+  /* ---------- 자동 필터 (CSV 데이터만으로 계산) ---------- */
+  var AUTO = [
+    { id: 'open', label: '지금 열린 곳', fn: function (l) { return status(l).cls === 'open'; } },
+    { id: 'late', label: '21시 이후까지', fn: function (l) {
+      var w = l.hours && l.hours.weekday; return !!w && toMin(w[1]) >= 21 * 60; } },
+    { id: 'sat', label: '토요일 운영', fn: function (l) {
+      var c = parseClosed(l.closed); return !!(l.hours && l.hours.sat) && !c.all && c.days.indexOf('토') < 0; } },
+    { id: 'sun', label: '일요일 운영', fn: function (l) {
+      var c = parseClosed(l.closed); return !!(l.hours && l.hours.holiday) && !c.all && c.days.indexOf('일') < 0; } },
+    { id: 'seats200', label: '좌석 200석 이상', fn: function (l) { return (l.seats || 0) >= 200; } },
+    { id: 'books100k', label: '장서 10만권 이상', fn: function (l) { return (l.books || 0) >= 100000; } }
+  ];
+
+  function hasAny(l, tags) { return l.facilities.some(function (t) { return tags.indexOf(t) >= 0; }); }
+  function groupById(id) { return groups.find(function (g) { return g.id === id; }); }
+
   /* ---------- 데이터 ---------- */
   function getJSON(url) {
     return fetch(url).then(function (r) {
@@ -99,8 +126,10 @@
   function load() {
     return Promise.all([
       getJSON('data/libraries.json'),
-      getJSON('data/extras.json').catch(function () { return {}; })
+      getJSON('data/extras.json').catch(function () { return {}; }),
+      getJSON('data/tags.json').catch(function () { return { groups: [] }; })
     ]).then(function (res) {
+      groups = (res[2] && res[2].groups) || [];
       var base = res[0], ex = res[1] || {}, ov = ex.overrides || {};
       var list = base.concat(ex.additions || []);
       list.forEach(function (l, i) {
@@ -145,6 +174,105 @@
       o.value = d; o.textContent = d;
       sel.appendChild(o);
     });
+
+    buildPurposeAndTagFilters();
+  }
+
+  // 칩 하나를 만든다: kind는 purpose | tag | auto
+  function chip(kind, value, label, count, set) {
+    var lab = document.createElement('label');
+    lab.className = 'chip' + (kind === 'purpose' ? ' purpose' : '');
+    lab.innerHTML = '<input type="checkbox" data-kind="' + kind + '" value="' + esc(value) + '"><span>' +
+      esc(label) + (count != null ? ' <i>' + count + '</i>' : '') + '</span>';
+    lab.querySelector('input').addEventListener('change', function (e) {
+      if (e.target.checked) set.add(value); else set.delete(value);
+      needFit = true;
+      render();
+    });
+    return lab;
+  }
+
+  function buildPurposeAndTagFilters() {
+    // 목적 버튼: 그 목적의 시설을 하나라도 가진 도서관이 있을 때만 보인다
+    var pBox = $('purposes');
+    pBox.innerHTML = '';
+    groups.forEach(function (g) {
+      var n = libs.filter(function (l) { return hasAny(l, g.tags); }).length;
+      if (n > 0) pBox.appendChild(chip('purpose', g.id, g.label, n, state.purposes));
+    });
+    pBox.hidden = !pBox.children.length;
+
+    // 운영·규모 (자동 필터)
+    var aBox = $('autoChips');
+    aBox.innerHTML = '';
+    AUTO.forEach(function (a) {
+      var n = libs.filter(a.fn).length;
+      aBox.appendChild(chip('auto', a.id, a.label, n, state.auto));
+    });
+
+    // 꼭 있어야 하는 시설: 확인된 도서관이 있는 태그만
+    var tBox = $('tagGroups');
+    tBox.innerHTML = '';
+    var any = false;
+    groups.forEach(function (g) {
+      var row = document.createElement('div');
+      row.className = 'tag-group';
+      var h = document.createElement('div');
+      h.className = 'tag-group-h';
+      h.textContent = g.label;
+      var chips = document.createElement('div');
+      chips.className = 'chips wrap';
+      g.tags.forEach(function (t) {
+        var n = libs.filter(function (l) { return l.facilities.indexOf(t) >= 0; }).length;
+        if (n > 0) chips.appendChild(chip('tag', t, t, n, state.tags));
+      });
+      if (chips.children.length) { row.appendChild(h); row.appendChild(chips); tBox.appendChild(row); any = true; }
+    });
+    $('tagSec').hidden = !any;
+  }
+
+  // 상태 → 화면의 체크 표시 맞추기
+  function syncControls() {
+    document.querySelectorAll('input[data-kind]').forEach(function (i) {
+      var set = i.dataset.kind === 'purpose' ? state.purposes : (i.dataset.kind === 'tag' ? state.tags : state.auto);
+      i.checked = set.has(i.value);
+    });
+    $('district').value = state.district;
+  }
+
+  // 칩 옆 숫자: 지금 선택한 유형(공공/작은/어린이) 안에서 해당하는 도서관 수
+  function refreshCounts() {
+    var pool = libs.filter(function (l) { return state.types.has(l.type); });
+    document.querySelectorAll('input[data-kind]').forEach(function (i) {
+      var v = i.value, n = 0, g, a;
+      if (i.dataset.kind === 'purpose') {
+        g = groupById(v);
+        n = g ? pool.filter(function (l) { return hasAny(l, g.tags); }).length : 0;
+      } else if (i.dataset.kind === 'tag') {
+        n = pool.filter(function (l) { return l.facilities.indexOf(v) >= 0; }).length;
+      } else {
+        a = AUTO.find(function (x) { return x.id === v; });
+        n = a ? pool.filter(a.fn).length : 0;
+      }
+      var el = i.parentNode.querySelector('i');
+      if (el) el.textContent = n;
+      i.parentNode.classList.toggle('zero', n === 0);
+    });
+  }
+
+  function activeFilterCount() {
+    return (state.district ? 1 : 0) + state.auto.size + state.tags.size;
+  }
+
+  function openSheet() {
+    $('sheet').hidden = false;
+    $('backdrop').hidden = false;
+    $('filterBtn').setAttribute('aria-expanded', 'true');
+  }
+  function closeSheet() {
+    $('sheet').hidden = true;
+    $('backdrop').hidden = true;
+    $('filterBtn').setAttribute('aria-expanded', 'false');
   }
 
   function filtered() {
@@ -152,6 +280,22 @@
     var out = libs.filter(function (l) {
       if (!state.types.has(l.type)) return false;
       if (state.district && l.district !== state.district) return false;
+      if (state.purposes.size) {
+        var okP = false;
+        state.purposes.forEach(function (id) {
+          var g = groupById(id);
+          if (g && hasAny(l, g.tags)) okP = true;
+        });
+        if (!okP) return false;
+      }
+      var miss = false;
+      state.tags.forEach(function (t) { if (l.facilities.indexOf(t) < 0) miss = true; });
+      if (miss) return false;
+      state.auto.forEach(function (id) {
+        var a = AUTO.find(function (x) { return x.id === id; });
+        if (a && !a.fn(l)) miss = true;
+      });
+      if (miss) return false;
       if (q) {
         var hay = (l.name + l.address + l.district + (l.org || '')).replace(/\s/g, '').toLowerCase();
         if (hay.indexOf(q) < 0) return false;
@@ -176,7 +320,16 @@
     var list = filtered();
     var now = kstNow();
     $('count').textContent = list.length + '곳';
+    var facilityFilter = state.purposes.size > 0 || state.tags.size > 0;
+    $('empty').textContent = facilityFilter
+      ? '조건에 맞는 도서관이 없어요. 부대시설 정보는 확인된 곳부터 채워 가는 중이에요.'
+      : '조건에 맞는 도서관이 없어요.';
     $('empty').hidden = list.length > 0;
+    var fn = activeFilterCount();
+    $('filterN').textContent = fn;
+    $('filterN').hidden = fn === 0;
+    $('sheetDone').textContent = list.length + '곳 보기';
+    refreshCounts();
 
     var ul = $('cards');
     ul.innerHTML = '';
@@ -193,7 +346,13 @@
           '<img class="thumb-img" src="' + esc(photoSrc(mainPhoto(l))) + '" alt="" loading="lazy"></div>' +
         '<div class="info">' +
           '<div class="name">' + esc(l.name) + '</div>' +
-          '<div class="meta">' + esc(l.address.replace(/^부산광역시\s*/, '')) + '</div>' +
+          (l.highlight
+            ? '<div class="meta hl">' + esc(l.highlight) + '</div>'
+            : '<div class="meta">' + esc(l.address.replace(/^부산광역시\s*/, '')) + '</div>') +
+          (l.facilities.length
+            ? '<div class="mini">' + l.facilities.slice(0, 3).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') +
+              (l.facilities.length > 3 ? '<span>+' + (l.facilities.length - 3) + '</span>' : '') + '</div>'
+            : '') +
           '<div class="line2"><span class="badge">' + esc(l.type) + '</span>' +
             '<span class="st ' + st.cls + '">' + esc(st.label) + '</span>' +
             (l._d != null && state.pos ? '<span class="dist">' + fmtDist(l._d) + '</span>' : '') +
@@ -277,6 +436,15 @@
     if (window.matchMedia('(max-width: 899px)').matches) closeDetail();
   }
 
+  function reportUrl(l) {
+    if (REPORT_FORM_URL && REPORT_FORM_ENTRY) {
+      return REPORT_FORM_URL + (REPORT_FORM_URL.indexOf('?') < 0 ? '?' : '&') + 'usp=pp_url&' +
+        encodeURIComponent(REPORT_FORM_ENTRY) + '=' + encodeURIComponent(l.name);
+    }
+    return 'https://github.com/' + REPO + '/issues/new?template=library-info.yml' +
+      '&title=' + encodeURIComponent('[정보 제보] ' + l.name) + '&library=' + encodeURIComponent(l.name);
+  }
+
   function detailHTML(l) {
     var st = status(l);
     var c = parseClosed(l.closed);
@@ -303,11 +471,14 @@
     var fac = l.facilities.length
       ? '<div class="tags">' + l.facilities.map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') + '</div>'
       : '<p class="muted">아직 등록된 부대시설 정보가 없어요. 열람좌석 ' + fmt(l.seats) + '석 규모입니다.</p>';
+    var report = '<a class="report" href="' + esc(reportUrl(l)) + '" target="_blank" rel="noopener">' +
+      (l.facilities.length ? '정보가 다르거나 빠졌나요? 제보하기' : '이 도서관을 아시나요? 정보 제보하기') + '</a>';
 
     return '' +
       '<div class="d-title">' + esc(l.name) + '</div>' +
       '<div class="d-sub" style="--dot:' + color(l.type) + '"><span class="badge">' + esc(l.type) + '</span>' +
         '<span class="st ' + st.cls + '">' + esc(st.label) + '</span></div>' +
+      (l.highlight ? '<p class="lead">' + esc(l.highlight) + '</p>' : '') +
       photos +
       '<div class="actions">' +
         (url ? '<a class="btn primary" href="' + esc(url) + '" target="_blank" rel="noopener">홈페이지</a>'
@@ -327,7 +498,7 @@
         '<dt>전화</dt><dd>' + (l.phone ? '<a href="tel:' + esc(l.phone.replace(/[^0-9+]/g, '')) + '">' + esc(l.phone) + '</a>' : '-') + '</dd>' +
         '<dt>운영기관</dt><dd>' + esc(l.org || '-') + '</dd>' +
       '</dl></div>' +
-      '<div class="sec"><h3>부대시설</h3>' + fac + '</div>' +
+      '<div class="sec"><h3>부대시설</h3>' + fac + report + '</div>' +
       '<div class="sec"><h3>규모</h3><div class="stats">' +
         '<div class="stat"><b>' + fmt(l.seats) + '</b><span>열람좌석</span></div>' +
         '<div class="stat"><b>' + fmt(l.books) + '</b><span>장서(권)</span></div>' +
@@ -471,7 +642,23 @@
     $('detailBody').addEventListener('load', photoEvent, true);
     $('detailBody').addEventListener('error', photoEvent, true);
     $('closeDetail').addEventListener('click', closeDetail);
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
+    $('filterBtn').addEventListener('click', openSheet);
+    $('sheetClose').addEventListener('click', closeSheet);
+    $('sheetDone').addEventListener('click', closeSheet);
+    $('backdrop').addEventListener('click', closeSheet);
+    $('sheetReset').addEventListener('click', function () {
+      state.district = '';
+      state.auto.clear();
+      state.tags.clear();
+      state.purposes.clear();
+      syncControls();
+      needFit = true;
+      render();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      if (!$('sheet').hidden) closeSheet(); else closeDetail();
+    });
     document.querySelectorAll('.tabs button').forEach(function (b) {
       b.addEventListener('click', function () { setTab(b.dataset.tab); });
     });

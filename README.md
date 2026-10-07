@@ -8,9 +8,12 @@
 |---|---|
 | `index.html`, `style.css`, `app.js` | 화면 (Leaflet + OpenStreetMap/CARTO 지도, 키 불필요) |
 | `data/libraries.json` | 공공데이터포털 「전국도서관표준데이터」에서 추린 부산 도서관 (자동 생성) |
-| `data/extras.json` | 부대시설·사진 등 직접 채우는 정보 |
+| `data/extras.json` | 부대시설·한 줄 특징·사진 출처 등 직접 채우는 정보 |
+| `data/tags.json` | 목적별(공부·작업·독서·취미) 부대시설 태그 목록 |
 | `images/` | 도서관 사진 |
 | `scripts/build_data.py` | CSV → `libraries.json` 변환 스크립트 |
+| `scripts/check_extras.py` | `extras.json` 입력 오류 검사 |
+| `.github/ISSUE_TEMPLATE/` | 사용자 정보 제보 양식 |
 
 ## 사진 올리기
 
@@ -28,7 +31,7 @@
 - 사진 출처를 남기려면 아래 `extras.json`에 `photoCredit`만 적으면 됩니다.
 - 저작권이 있는 사진(도서관 홈페이지, 지도 서비스 등)은 허락 없이 올리지 마세요. 직접 촬영했거나, 이용 허락을 받았거나, 공공누리 등 이용 조건이 명시된 사진만 사용하세요.
 
-## 부대시설·출처 채우기
+## 부대시설 채우기
 
 `data/extras.json`의 `overrides`에 도서관 이름으로 추가합니다. `libraries.json`을 다시 만들어도 이 파일은 유지됩니다.
 
@@ -36,7 +39,8 @@
 {
   "overrides": {
     "도서관이름": {
-      "facilities": ["어린이자료실", "카페"],
+      "facilities": ["스터디룸", "와이파이", "북카페"],
+      "highlight": "바다가 보이는 열람실",
       "photoCredit": "촬영: 홍길동"
     }
   },
@@ -44,8 +48,34 @@
 }
 ```
 
-- `photos`: `["a.jpg", "b.jpg"]`처럼 적으면 파일명 규칙 대신 이 목록을 사용합니다.
+| 항목 | 설명 |
+|---|---|
+| `facilities` | `data/tags.json`에 있는 이름을 **그대로** 적습니다. 필터와 카드 태그에 쓰입니다 |
+| `highlight` | 한 줄 특징 (40자 이내). 카드와 상세 화면에 표시됩니다 |
+| `photoCredit` | 사진 출처 표기 |
+| `photos` | `["a.jpg", "b.jpg"]`처럼 적으면 파일명 규칙 대신 이 목록을 사용합니다 |
+
 - 전문도서관처럼 표준데이터에 없는 곳은 `additions`에 `libraries.json`과 같은 형식으로 추가하면 `전문도서관` 체크박스가 자동으로 생깁니다.
+- 올리기 전에 `python3 scripts/check_extras.py`로 이름 오타, 없는 태그, 없는 사진 파일을 확인하세요.
+
+## 필터 구조
+
+| 종류 | 동작 |
+|---|---|
+| 목적 버튼 (공부·작업·독서·취미) | 그 목적 태그 중 **하나라도** 있으면 표시. 여러 목적을 고르면 합쳐서 표시. 시설 정보가 채워진 도서관이 생겨야 버튼이 나타납니다 |
+| 꼭 있어야 하는 시설 | 고른 태그가 **모두** 있어야 표시 |
+| 운영·규모 | 지금 열린 곳, 21시 이후까지, 토·일요일 운영, 좌석 200석 이상, 장서 10만권 이상. 고른 조건을 **모두** 만족해야 표시 (CSV 데이터로 자동 계산) |
+
+태그를 바꾸려면 `data/tags.json`을 고치고, 제보 양식(`.github/ISSUE_TEMPLATE/library-info.yml`)의 시설 목록도 같게 맞추세요. `check_extras.py`가 서로 다르면 알려줍니다.
+
+## 정보 제보
+
+도서관 상세 화면의 "제보하기" 링크는 기본으로 이 저장소의 GitHub 이슈 양식을 엽니다 (제보자가 GitHub 계정이 있어야 함).
+더 쉽게 받으려면 구글 폼을 만들어 `app.js` 맨 위의 `REPORT_FORM_URL`, `REPORT_FORM_ENTRY`를 채우세요.
+
+1. 구글 폼 만들기: "도서관 이름" 단답형 + 시설 체크박스 + 한 줄 특징 + 확인 방법
+2. 폼 메뉴(⋮) → **미리 채워진 링크 받기** → "도서관 이름" 칸에 아무 글자 입력 → 링크 가져오기
+3. 링크의 `entry.숫자=` 부분이 `REPORT_FORM_ENTRY`, `?usp=pp_url` 앞부분이 `REPORT_FORM_URL`입니다
 
 ## 데이터 갱신
 

@@ -1,0 +1,59 @@
+name: 도서관 정보 제보
+description: 부대시설·이용 정보가 다르거나 빠져 있으면 알려주세요
+title: "[정보 제보] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        직접 확인하신 내용만 적어 주세요. 확인 후 사이트에 반영합니다.
+        사진은 직접 찍으셨거나 이용 허락을 받은 것만 첨부해 주세요.
+  - type: input
+    id: library
+    attributes:
+      label: 도서관 이름
+      placeholder: 예) 부산도서관
+    validations:
+      required: true
+  - type: checkboxes
+    id: facilities
+    attributes:
+      label: 있는 시설 (확인한 것만 체크)
+      options:
+        - label: 스터디룸
+        - label: 개인 칸막이석
+        - label: 조용한 열람실
+        - label: 콘센트 좌석
+        - label: 노트북석
+        - label: 와이파이
+        - label: 복사·인쇄
+        - label: 회의·토론실
+        - label: 주차
+        - label: 북카페
+        - label: 테라스·정원·루프탑
+        - label: 큐레이션 서가
+        - label: 잡지·신문
+        - label: 문화강좌실
+        - label: 전시·공연
+        - label: 영화 상영
+        - label: 메이커스페이스
+        - label: 미디어·VR
+  - type: input
+    id: highlight
+    attributes:
+      label: 한 줄 특징 (선택)
+      placeholder: 예) 바다가 보이는 열람실
+  - type: dropdown
+    id: how
+    attributes:
+      label: 어떻게 확인하셨나요?
+      options:
+        - 직접 방문했어요
+        - 도서관 홈페이지·안내문에서 봤어요
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 더 알려주실 내용 (선택)
+      placeholder: 이용시간 변경, 예약 방법, 사진 출처 등
