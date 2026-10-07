@@ -87,3 +87,13 @@ python3 scripts/build_data.py 전국도서관표준데이터.csv
 ## 배포
 
 GitHub 저장소 Settings → Pages → Branch `main` / `/ (root)` 선택.
+
+## 구글시트 체크리스트로 부대시설 채우기
+
+1. `python3 scripts/make_checklist.py checklist.csv` 로 공공도서관 53곳 체크리스트를 만들고, 구글 드라이브에 올려 시트로 변환합니다. (이미 입력된 도서관은 O 표시가 미리 들어갑니다.)
+2. 도서관을 직접 방문하거나 홈페이지에서 확인한 시설만 O 를 적습니다. 모르면 비워둡니다.
+3. 시트에서 파일 > 다운로드 > 쉼표로 구분된 값(.csv) 으로 내려받습니다.
+4. `python3 scripts/import_sheet.py 내려받은.csv` 를 실행하면 data/extras.json 에 합쳐집니다. 먼저 `--dry` 를 붙여 반영 건수를 확인할 수 있습니다.
+5. `python3 scripts/check_extras.py` 로 검사한 뒤 커밋합니다.
+
+시트에서 확인일이 비어 있으면 가져온 날짜가 들어갑니다. 출처 칸에 http 주소를 적으면 상세 화면에 출처 링크로 표시됩니다.
