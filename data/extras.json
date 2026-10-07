@@ -61,6 +61,109 @@
       "source": "http://library.gijang.go.kr/jglib/contents.do?mId=0103000000",
       "checked": "2026-10-07",
       "highlight": "144석 어린이극장(영화 상영관)이 있어요"
+    },
+    "수영구도서관": {
+      "facilities": [
+        "북카페",
+        "잡지·신문",
+        "복사·인쇄",
+        "문화강좌실",
+        "테라스·정원·루프탑"
+      ],
+      "highlight": "북카페, 야외쉼터, 미디어창작공간까지 있어요",
+      "source": "http://www.suyeong.go.kr/library/index.suyeong",
+      "checked": "2026-10-07",
+      "spaces": [
+        {
+          "floor": "지하1층",
+          "name": "어린이자료실",
+          "seats": 46,
+          "note": "어린이도서와 유아도서"
+        },
+        {
+          "floor": "지하1층",
+          "name": "어린이 문화교실",
+          "seats": 12
+        },
+        {
+          "floor": "지하1층",
+          "name": "강당",
+          "seats": 88
+        },
+        {
+          "floor": "지하1층",
+          "name": "수유실"
+        },
+        {
+          "floor": "1층",
+          "name": "북카페",
+          "seats": 16
+        },
+        {
+          "floor": "1층",
+          "name": "이야기라이브러리"
+        },
+        {
+          "floor": "2층",
+          "name": "종합자료실1",
+          "seats": 114,
+          "note": "일반도서(문학 제외), 정기간행물, 지역자료"
+        },
+        {
+          "floor": "2층",
+          "name": "정기간행물 코너"
+        },
+        {
+          "floor": "2층",
+          "name": "야외쉼터 비움bium"
+        },
+        {
+          "floor": "3층",
+          "name": "종합자료실2",
+          "seats": 71,
+          "note": "문학도서, 웹툰, 청소년도서"
+        },
+        {
+          "floor": "3층",
+          "name": "웹툰X청소년 코너"
+        },
+        {
+          "floor": "3층",
+          "name": "디지털자료실",
+          "seats": 24,
+          "note": "PC, DVD 감상, 프린터·스캐너"
+        },
+        {
+          "floor": "3층",
+          "name": "동아리실1",
+          "seats": 15
+        },
+        {
+          "floor": "3층",
+          "name": "동아리실2",
+          "seats": 18
+        },
+        {
+          "floor": "3층",
+          "name": "미디어창작공간 온on",
+          "seats": 20
+        },
+        {
+          "floor": "4층",
+          "name": "휴게공간 오프off",
+          "seats": 42
+        },
+        {
+          "floor": "4층",
+          "name": "강의실1",
+          "seats": 24
+        },
+        {
+          "floor": "4층",
+          "name": "강의실2",
+          "seats": 52
+        }
+      ]
     }
   },
   "additions": []

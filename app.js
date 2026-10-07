@@ -138,6 +138,7 @@
         if (o) Object.keys(o).forEach(function (k) { l[k] = o[k]; });
         l.facilities = l.facilities || [];
         l.photos = l.photos || [];
+        l.spaces = l.spaces || [];
       });
       libs = list;
     });
@@ -445,6 +446,23 @@
       '&title=' + encodeURIComponent('[정보 제보] ' + l.name) + '&library=' + encodeURIComponent(l.name);
   }
 
+  function spacesHTML(l) {
+    if (!l.spaces.length) return '';
+    var order = [], by = {};
+    l.spaces.forEach(function (s) {
+      if (!by[s.floor]) { by[s.floor] = []; order.push(s.floor); }
+      by[s.floor].push(s);
+    });
+    return '<details class="spaces"><summary>공간 안내 <span class="muted">' + l.spaces.length + '곳</span></summary>' +
+      order.map(function (f) {
+        return '<div class="floor"><b>' + esc(f) + '</b><ul>' + by[f].map(function (s) {
+          return '<li><span class="sp-name">' + esc(s.name) + '</span>' +
+            (s.seats ? '<span class="sp-seats">' + fmt(s.seats) + '석</span>' : '') +
+            (s.note ? '<span class="sp-note">' + esc(s.note) + '</span>' : '') + '</li>';
+        }).join('') + '</ul></div>';
+      }).join('') + '</details>';
+  }
+
   function detailHTML(l) {
     var st = status(l);
     var c = parseClosed(l.closed);
@@ -503,7 +521,7 @@
         '<dt>전화</dt><dd>' + (l.phone ? '<a href="tel:' + esc(l.phone.replace(/[^0-9+]/g, '')) + '">' + esc(l.phone) + '</a>' : '-') + '</dd>' +
         '<dt>운영기관</dt><dd>' + esc(l.org || '-') + '</dd>' +
       '</dl></div>' +
-      '<div class="sec"><h3>부대시설</h3>' + fac + src + report + '</div>' +
+      '<div class="sec"><h3>부대시설</h3>' + fac + spacesHTML(l) + src + report + '</div>' +
       '<div class="sec"><h3>규모</h3><div class="stats">' +
         '<div class="stat"><b>' + fmt(l.seats) + '</b><span>열람좌석</span></div>' +
         '<div class="stat"><b>' + fmt(l.books) + '</b><span>장서(권)</span></div>' +

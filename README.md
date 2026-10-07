@@ -97,3 +97,16 @@ GitHub 저장소 Settings → Pages → Branch `main` / `/ (root)` 선택.
 5. `python3 scripts/check_extras.py` 로 검사한 뒤 커밋합니다.
 
 시트에서 확인일이 비어 있으면 가져온 날짜가 들어갑니다. 출처 칸에 http 주소를 적으면 상세 화면에 출처 링크로 표시됩니다.
+
+## 공간 안내 (spaces)
+
+층별 공간을 상세 화면에 접이식 목록으로 보여줍니다. `data/extras.json` 의 도서관 항목에 `spaces` 를 추가하세요.
+
+```json
+"spaces": [
+  { "floor": "1층", "name": "북카페", "seats": 16 },
+  { "floor": "3층", "name": "디지털자료실", "seats": 24, "note": "PC, DVD 감상, 프린터·스캐너" }
+]
+```
+
+`floor` 와 `name` 은 필수이고 `seats`(숫자), `note`(40자 이내)는 선택입니다. 같은 `floor` 끼리 묶여 표시되며 입력한 순서대로 나옵니다. 필터 태그(facilities)와는 별개로 보여주는 용도입니다.
