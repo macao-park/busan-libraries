@@ -453,7 +453,12 @@
       if (!by[s.floor]) { by[s.floor] = []; order.push(s.floor); }
       by[s.floor].push(s);
     });
-    return '<details class="spaces"><summary>공간 안내 <span class="muted">' + l.spaces.length + '곳</span></summary>' +
+    var names = l.spaces.filter(function (x) { return !/서고|사무/.test(x.name); }).slice(0, 4).map(function (x) { return x.name; });
+    return '<details class="spaces"><summary>' +
+      '<span class="sp-ico" aria-hidden="true">▤</span>' +
+      '<span class="sp-txt"><b>층별 공간 안내 <em>' + l.spaces.length + '곳</em></b>' +
+      '<small>' + esc(names.join(' · ')) + ' 외 더 보기</small></span>' +
+      '<span class="sp-chev" aria-hidden="true"></span></summary>' +
       order.map(function (f) {
         return '<div class="floor"><b>' + esc(f) + '</b><ul>' + by[f].map(function (s) {
           return '<li><span class="sp-name">' + esc(s.name) + '</span>' +
@@ -481,6 +486,9 @@
         '<div class="photos" hidden>' + first.map(function (p, i) {
           return '<img data-n="' + (i + 1) + '" src="' + esc(photoSrc(p)) + '" alt="' + esc(l.name) + ' 사진">';
         }).join('') + '</div>' +
+        '<button class="p-nav prev" type="button" aria-label="이전 사진" hidden>‹</button>' +
+        '<button class="p-nav next" type="button" aria-label="다음 사진" hidden>›</button>' +
+        '<span class="p-count" hidden></span>' +
         '<p class="muted credit" hidden>' + (l.photoCredit ? '사진: ' + esc(l.photoCredit) : '') + '</p>' +
         '<div class="photo-empty" hidden><span>아직 등록된 사진이 없어요</span>' +
           '<a class="btn" href="' + esc(naverPhoto) + '" target="_blank" rel="noopener">네이버지도에서 사진 보기</a></div>' +
@@ -629,6 +637,30 @@
       var t = e.target;
       if (t && t.classList && t.classList.contains('thumb-img')) t.remove(); // 사진이 없으면 아이콘이 보인다
     }, true);
+    function updateNav(wrap) {
+      var photos = wrap.querySelector('.photos');
+      if (!photos) return;
+      var imgs = photos.querySelectorAll('img[data-ok]');
+      var many = imgs.length > 1 && !photos.hidden;
+      var step = imgs.length ? imgs[0].offsetWidth + 8 : 1;
+      var i = Math.min(imgs.length - 1, Math.max(0, Math.round(photos.scrollLeft / step)));
+      var prev = wrap.querySelector('.p-nav.prev'), next = wrap.querySelector('.p-nav.next'), cnt = wrap.querySelector('.p-count');
+      prev.hidden = next.hidden = cnt.hidden = !many;
+      prev.disabled = i <= 0;
+      next.disabled = i >= imgs.length - 1;
+      cnt.textContent = (i + 1) + ' / ' + imgs.length;
+    }
+    $('detailBody').addEventListener('scroll', function (e) {
+      var w = e.target.closest && e.target.closest('.photo-wrap');
+      if (w) updateNav(w);
+    }, true);
+    $('detailBody').addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('.p-nav');
+      if (!b) return;
+      var wrap = b.closest('.photo-wrap'), photos = wrap.querySelector('.photos');
+      var img = photos.querySelector('img[data-ok]');
+      photos.scrollBy({ left: (b.classList.contains('next') ? 1 : -1) * (img.offsetWidth + 8), behavior: 'smooth' });
+    });
     function photoEvent(e) {
       var img = e.target;
       if (!img || img.tagName !== 'IMG' || !img.closest) return;
@@ -661,6 +693,7 @@
         credit.hidden = true;
         empty.hidden = false;
       }
+      updateNav(wrap);
     }
     $('detailBody').addEventListener('load', photoEvent, true);
     $('detailBody').addEventListener('error', photoEvent, true);
