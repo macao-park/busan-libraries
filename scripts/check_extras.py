@@ -38,6 +38,12 @@ def main():
         for p in o.get("photos", []):
             if not re.match(r"^(https?:)?//", p) and not (ROOT / "images" / p).exists():
                 problems.append(f"[사진] {name}: images/{p} 파일이 없습니다")
+        if o.get("source") and not re.match(r"^https?://", o["source"]):
+            problems.append(f"[출처] {name}: source는 http(s)로 시작하는 주소여야 합니다")
+        if o.get("checked") and not re.match(r"^\d{4}-\d{2}-\d{2}$", o["checked"]):
+            problems.append(f"[확인일] {name}: checked는 2026-10-07 형식이어야 합니다")
+        if o.get("facilities") and not o.get("source"):
+            print(f"  (참고) {name}: 출처(source)가 없습니다. 직접 확인한 정보라면 괜찮습니다")
         if len(o.get("highlight", "")) > 40:
             problems.append(f"[특징] {name}: 한 줄 특징이 40자를 넘습니다")
 

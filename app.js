@@ -471,6 +471,11 @@
     var fac = l.facilities.length
       ? '<div class="tags">' + l.facilities.map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') + '</div>'
       : '<p class="muted">아직 등록된 부대시설 정보가 없어요. 열람좌석 ' + fmt(l.seats) + '석 규모입니다.</p>';
+    var srcUrl = safeUrl(l.source);
+    var src = srcUrl
+      ? '<p class="muted src">도서관 홈페이지 시설안내 기준' + (l.checked ? ' · ' + esc(l.checked) + ' 확인' : '') +
+        ' · <a href="' + esc(srcUrl) + '" target="_blank" rel="noopener">출처</a></p>'
+      : '';
     var report = '<a class="report" href="' + esc(reportUrl(l)) + '" target="_blank" rel="noopener">' +
       (l.facilities.length ? '정보가 다르거나 빠졌나요? 제보하기' : '이 도서관을 아시나요? 정보 제보하기') + '</a>';
 
@@ -498,7 +503,7 @@
         '<dt>전화</dt><dd>' + (l.phone ? '<a href="tel:' + esc(l.phone.replace(/[^0-9+]/g, '')) + '">' + esc(l.phone) + '</a>' : '-') + '</dd>' +
         '<dt>운영기관</dt><dd>' + esc(l.org || '-') + '</dd>' +
       '</dl></div>' +
-      '<div class="sec"><h3>부대시설</h3>' + fac + report + '</div>' +
+      '<div class="sec"><h3>부대시설</h3>' + fac + src + report + '</div>' +
       '<div class="sec"><h3>규모</h3><div class="stats">' +
         '<div class="stat"><b>' + fmt(l.seats) + '</b><span>열람좌석</span></div>' +
         '<div class="stat"><b>' + fmt(l.books) + '</b><span>장서(권)</span></div>' +

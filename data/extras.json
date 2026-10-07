@@ -1,4 +1,67 @@
 {
-  "overrides": {},
+  "overrides": {
+    "기장도서관": {
+      "facilities": [
+        "조용한 열람실",
+        "복사·인쇄",
+        "북카페",
+        "문화강좌실",
+        "전시·공연",
+        "영화 상영",
+        "미디어·VR"
+      ],
+      "source": "https://library.gijang.go.kr/gijang/contents.do?mId=0103000000",
+      "checked": "2026-10-07",
+      "highlight": "북카페와 영화 상영 시청각실이 있어요"
+    },
+    "고촌어울림도서관": {
+      "facilities": [
+        "조용한 열람실",
+        "문화강좌실",
+        "주차"
+      ],
+      "source": "https://library.gijang.go.kr/gochon/contents.do?mId=0103000000",
+      "checked": "2026-10-07"
+    },
+    "교리도서관": {
+      "facilities": [
+        "문화강좌실",
+        "잡지·신문"
+      ],
+      "source": "https://library.gijang.go.kr/gyori/contents.do?mId=0103000000",
+      "checked": "2026-10-07"
+    },
+    "내리새라도서관": {
+      "facilities": [
+        "조용한 열람실",
+        "문화강좌실",
+        "잡지·신문",
+        "주차"
+      ],
+      "source": "https://library.gijang.go.kr/naeri/contents.do?mId=0103000000",
+      "checked": "2026-10-07"
+    },
+    "대라다목적도서관": {
+      "facilities": [
+        "문화강좌실",
+        "주차"
+      ],
+      "source": "http://library.gijang.go.kr/daera/contents.do?mId=0103000000",
+      "checked": "2026-10-07",
+      "highlight": "청소년상담복지센터가 같은 건물에 있어요"
+    },
+    "정관도서관": {
+      "facilities": [
+        "조용한 열람실",
+        "노트북석",
+        "문화강좌실",
+        "영화 상영",
+        "주차"
+      ],
+      "source": "http://library.gijang.go.kr/jglib/contents.do?mId=0103000000",
+      "checked": "2026-10-07",
+      "highlight": "144석 어린이극장(영화 상영관)이 있어요"
+    }
+  },
   "additions": []
 }

@@ -305,6 +305,7 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 .hint { font-weight: 400; font-size: 12px; margin-left: 6px; opacity: .8; }
 .tag-group-h { font-size: 13px; color: var(--sub); margin: 14px 0 8px; }
 .lead { margin: 12px 0 0; font-size: 15px; }
+.src { margin: 10px 0 0; }
 .report { display: inline-block; margin-top: 12px; font-size: 13px; }
 
 /* ---------- 데스크톱 ---------- */
