@@ -1,0 +1,6419 @@
+[
+ {
+  "name": "강서기적의도서관",
+  "type": "어린이도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티10로 80(명지동, 강서기적의도서관)",
+  "phone": "051-970-2317",
+  "url": "https://library.bsgangseo.go.kr/gmlib/",
+  "lat": 35.08616321,
+  "lng": 128.904741,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 247,
+  "books": 82492,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1289.18,
+  "org": "부산광역시 강서구청",
+  "updated": "2025-09-10",
+  "id": 1
+ },
+ {
+  "name": "강서도서관",
+  "type": "공공도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 공항로811번길 10(강서브라이트센터 3층)",
+  "phone": "051-970-4068",
+  "url": "https://library.bsgangseo.go.kr/gslib/",
+  "lat": 35.18023609,
+  "lng": 128.9572,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 306,
+  "books": 123603,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 3418,
+  "org": "부산광역시 강서구청",
+  "updated": "2025-09-10",
+  "id": 2
+ },
+ {
+  "name": "극동스타클래스작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티2로 71",
+  "phone": "051-271-2142",
+  "url": "",
+  "lat": 35.08395235,
+  "lng": 128.8999885,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "22:00"
+   ],
+   "sat": [
+    "10:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 120,
+  "books": 11086,
+  "loanBooks": 3,
+  "loanDays": 10,
+  "area": 367,
+  "org": "극동스타클래스작은도서관",
+  "updated": "2025-09-10",
+  "id": 3
+ },
+ {
+  "name": "금강3차작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 110",
+  "phone": "051-201-4521",
+  "url": "",
+  "lat": 35.10407852,
+  "lng": 128.9214448,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 23,
+  "books": 1971,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 110.3779,
+  "org": "금강3차작은도서관입주자대표회의",
+  "updated": "2025-09-10",
+  "id": 4
+ },
+ {
+  "name": "꿈마루작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 공항진입로42번길 20",
+  "phone": "051-979-2131",
+  "url": "",
+  "lat": 35.18343101,
+  "lng": 128.9519774,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "19:00"
+   ],
+   "sat": [
+    "10:00",
+    "19:00"
+   ],
+   "holiday": null
+  },
+  "seats": 18,
+  "books": 6760,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 152,
+  "org": "공군제5공중기동비행단",
+  "updated": "2025-09-10",
+  "id": 5
+ },
+ {
+  "name": "대방2차Book적Book적작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 11",
+  "phone": "051-294-8705",
+  "url": "",
+  "lat": 35.09532965,
+  "lng": 128.9191736,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "12:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 62,
+  "books": 10596,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": 141,
+  "org": "명지대방노블랜드 오션뷰2차",
+  "updated": "2025-09-10",
+  "id": 6
+ },
+ {
+  "name": "더힐시그니처작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제7로 110",
+  "phone": "051-271-3577",
+  "url": "",
+  "lat": 35.09593055,
+  "lng": 128.9130868,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": [
+    "13:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 5660,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 125.26,
+  "org": "더힐시그니처아파트입주자대표회의",
+  "updated": "2025-09-10",
+  "id": 7
+ },
+ {
+  "name": "도란도란작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 165",
+  "phone": "051-201-0062",
+  "url": "",
+  "lat": 35.10998668,
+  "lng": 128.92137,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "12:00",
+    "18:00"
+   ],
+   "sat": [
+    "12:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 36,
+  "books": 4791,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 200.46,
+  "org": "명지스위트팰리스",
+  "updated": "2025-09-10",
+  "id": 8
+ },
+ {
+  "name": "동행작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제6로 288",
+  "phone": "051-204-1191",
+  "url": "",
+  "lat": 35.10098091,
+  "lng": 128.9242407,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "18:00"
+   ],
+   "sat": [
+    "13:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 32,
+  "books": 2140,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 150,
+  "org": "동행교회",
+  "updated": "2025-09-10",
+  "id": 9
+ },
+ {
+  "name": "링컨타운책벌레작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티10로 16",
+  "phone": "051-271-7170",
+  "url": "",
+  "lat": 35.08639247,
+  "lng": 128.8967866,
+  "closed": "화+목+토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 22,
+  "books": 5900,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 121,
+  "org": "퀸덤1차 링컨타운아파트",
+  "updated": "2025-09-10",
+  "id": 10
+ },
+ {
+  "name": "명지2차금강작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 109",
+  "phone": "051-207-0401",
+  "url": "",
+  "lat": 35.10421503,
+  "lng": 128.9191938,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 50,
+  "books": 1481,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 51,
+  "org": "명지2차금강펜테리움센트럴파크아파트",
+  "updated": "2025-09-10",
+  "id": 11
+ },
+ {
+  "name": "명지두산작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티11로 22",
+  "phone": "051-271-3787",
+  "url": "",
+  "lat": 35.08399984,
+  "lng": 128.8967369,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "23:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 2590,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 44.7,
+  "org": "명지두산위브포세이돈아파트입주자대표회의",
+  "updated": "2025-09-10",
+  "id": 12
+ },
+ {
+  "name": "명지한신휴플러스작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티1로 155(명지오션시티 한신휴플러스 109동)",
+  "phone": "051-271-2750",
+  "url": "",
+  "lat": 35.08081407,
+  "lng": 128.9011278,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "21:00"
+   ],
+   "sat": [
+    "09:00",
+    "21:00"
+   ],
+   "holiday": null
+  },
+  "seats": 60,
+  "books": 1448,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 332,
+  "org": "명지한신휴플러스",
+  "updated": "2025-09-10",
+  "id": 13
+ },
+ {
+  "name": "미라클도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제2로 27, 606호(대산골든스퀘어)",
+  "phone": "051-000-0000",
+  "url": "",
+  "lat": 35.0941549,
+  "lng": 128.9061493,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 1055,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 97.605,
+  "org": "전하는교회",
+  "updated": "2025-09-10",
+  "id": 14
+ },
+ {
+  "name": "새날도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 공항로1309번길 142",
+  "phone": "051-714-2150",
+  "url": "",
+  "lat": 35.2158,
+  "lng": 128.9807831,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 1139,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": 66.05,
+  "org": "새날교회",
+  "updated": "2025-09-10",
+  "id": 15
+ },
+ {
+  "name": "세이지작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 송정길43번길 16",
+  "phone": "051-000-0000",
+  "url": "",
+  "lat": 35.10041581,
+  "lng": 128.8419611,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 8,
+  "books": 2483,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 41.251,
+  "org": "세계로교회",
+  "updated": "2025-09-10",
+  "id": 16
+ },
+ {
+  "name": "소담북카페",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제8로 289",
+  "phone": "051-203-0199",
+  "url": "",
+  "lat": 35.09792767,
+  "lng": 128.9244672,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "12:00",
+    "19:00"
+   ],
+   "sat": [
+    "12:00",
+    "19:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 4400,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 77,
+  "org": "동일교회",
+  "updated": "2025-09-10",
+  "id": 17
+ },
+ {
+  "name": "솔마레작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티12로 10(엘크루솔마레 107동)",
+  "phone": "051-271-3999",
+  "url": "",
+  "lat": 35.08173983,
+  "lng": 128.8965973,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 107,
+  "books": 1544,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 382,
+  "org": "엘크루솔마레아파트",
+  "updated": "2025-09-10",
+  "id": 18
+ },
+ {
+  "name": "신호작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 르노삼성대로 14(신호동, 신호문화공원 본관 1층)",
+  "phone": "051-970-2316",
+  "url": "https://library.bsgangseo.go.kr/gmlib/",
+  "lat": 35.08864446,
+  "lng": 128.8725303,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "17:00"
+   ]
+  },
+  "seats": 30,
+  "books": 9585,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 156.84,
+  "org": "부산광역시 강서구청",
+  "updated": "2025-09-10",
+  "id": 19
+ },
+ {
+  "name": "아이꿈작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제6로318번길 58(명지동, 강서구육아종합지원센터 2층)",
+  "phone": "051-201-5202",
+  "url": "http://www.bgscc.or.kr/",
+  "lat": 35.10084821,
+  "lng": 128.9254715,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "17:30"
+   ],
+   "sat": [
+    "09:30",
+    "17:30"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 8684,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 105.8,
+  "org": "부산광역시 강서구 강서구육아종합지원센터",
+  "updated": "2025-09-10",
+  "id": 20
+ },
+ {
+  "name": "아인슈타인타운책벌레작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티11로 51",
+  "phone": "051-271-7781",
+  "url": "",
+  "lat": 35.08637338,
+  "lng": 128.8998473,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 36,
+  "books": 3053,
+  "loanBooks": 4,
+  "loanDays": 14,
+  "area": 129,
+  "org": "퀸덤1차 아이슈타인타운",
+  "updated": "2025-09-10",
+  "id": 21
+ },
+ {
+  "name": "에디슨타운책벌레작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지오션시티10로 17",
+  "phone": "051-271-0541",
+  "url": "",
+  "lat": 35.08814982,
+  "lng": 128.8973624,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 23,
+  "books": 4233,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 131,
+  "org": "퀸덤1차 에디슨타운",
+  "updated": "2025-09-10",
+  "id": 22
+ },
+ {
+  "name": "에일린의뜰작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 60",
+  "phone": "051-291-8855",
+  "url": "",
+  "lat": 35.10045574,
+  "lng": 128.920892,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "05:00",
+    "23:00"
+   ],
+   "sat": [
+    "05:00",
+    "23:00"
+   ],
+   "holiday": [
+    "05:00",
+    "23:00"
+   ]
+  },
+  "seats": 28,
+  "books": 3446,
+  "loanBooks": 6,
+  "loanDays": 7,
+  "area": 65,
+  "org": "명지에일린의뜰",
+  "updated": "2025-09-10",
+  "id": 23
+ },
+ {
+  "name": "중흥에듀오션작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 90",
+  "phone": "051-201-5923",
+  "url": "",
+  "lat": 35.10125678,
+  "lng": 128.9208558,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "18:00"
+   ]
+  },
+  "seats": 15,
+  "books": 2056,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 46.2,
+  "org": "중흥S클래스에듀오션",
+  "updated": "2025-09-10",
+  "id": 24
+ },
+ {
+  "name": "지사꿈꾸는작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 과학산단2로 20번길 69",
+  "phone": "051-941-1184",
+  "url": "",
+  "lat": 35.15089393,
+  "lng": 128.8389873,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "12:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 13,
+  "books": 7782,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": 77,
+  "org": "지사꿈꾸는 작은도서관 운영위원회",
+  "updated": "2025-09-10",
+  "id": 25
+ },
+ {
+  "name": "지사도서관",
+  "type": "공공도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 과학산단2로20번길 5(지사문화회관 3층)",
+  "phone": "051-970-2777",
+  "url": "https://library.bsgangseo.go.kr/jslib/",
+  "lat": 35.15093108,
+  "lng": 128.8312888,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 30,
+  "books": 31037,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 682.86,
+  "org": "부산광역시 강서구청",
+  "updated": "2025-09-10",
+  "id": 26
+ },
+ {
+  "name": "지사자원봉사캠프작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 과학산단2로 20번길 35",
+  "phone": "051-832-5121",
+  "url": "",
+  "lat": 35.15101859,
+  "lng": 128.8357342,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 1577,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 156.86,
+  "org": "부산지사휴먼시아관리사무소",
+  "updated": "2025-09-10",
+  "id": 27
+ },
+ {
+  "name": "책나무작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 대저로63번길 31",
+  "phone": "051-972-4591",
+  "url": "",
+  "lat": 35.21676104,
+  "lng": 128.9593384,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 3238,
+  "loanBooks": 2,
+  "loanDays": 14,
+  "area": 45,
+  "org": "강서구종합사회복지관",
+  "updated": "2025-09-10",
+  "id": 28
+ },
+ {
+  "name": "클래시안작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제13로 38번길 11",
+  "phone": "051-292-0573",
+  "url": "",
+  "lat": 35.10987329,
+  "lng": 128.9236719,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": [
+    "13:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 2124,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 539.969,
+  "org": "명지중흥S-클래스 더 테라스",
+  "updated": "2025-09-10",
+  "id": 29
+ },
+ {
+  "name": "협성숲속의작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 과학산단로306번길 10",
+  "phone": "051-941-2725",
+  "url": "",
+  "lat": 35.14966149,
+  "lng": 128.8368221,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 24,
+  "books": 1721,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 120.135,
+  "org": "협성DS엘리시안아파트입주자대표회의",
+  "updated": "2025-09-10",
+  "id": 30
+ },
+ {
+  "name": "호반베르디움작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 29",
+  "phone": "051-271-8826",
+  "url": "",
+  "lat": 35.09611405,
+  "lng": 128.9178981,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "06:00",
+    "18:00"
+   ],
+   "sat": [
+    "06:00",
+    "18:00"
+   ],
+   "holiday": [
+    "06:00",
+    "18:00"
+   ]
+  },
+  "seats": 8,
+  "books": 2419,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 285,
+  "org": "관리사무소",
+  "updated": "2025-09-10",
+  "id": 31
+ },
+ {
+  "name": "호반써밋명지국제작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 89",
+  "phone": "051-271-2766",
+  "url": "",
+  "lat": 35.10236823,
+  "lng": 128.9202028,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": [
+    "09:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 39,
+  "books": 3453,
+  "loanBooks": 5,
+  "loanDays": 10,
+  "area": 296.3343,
+  "org": "호반써밋명지국제입주자대표회의",
+  "updated": "2025-09-10",
+  "id": 32
+ },
+ {
+  "name": "휴포레작은도서관",
+  "type": "작은도서관",
+  "district": "강서구",
+  "address": "부산광역시 강서구 명지국제5로 141",
+  "phone": "051-292-2846",
+  "url": "",
+  "lat": 35.10753083,
+  "lng": 128.9211202,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "14:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 17,
+  "books": 2086,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 125,
+  "org": "명지협성휴포레아파트대표회의",
+  "updated": "2025-09-10",
+  "id": 33
+ },
+ {
+  "name": "금샘도서관",
+  "type": "공공도서관",
+  "district": "금정구",
+  "address": "부산광역시 금정구 기찰로94(부곡동), 금샘도서관",
+  "phone": "051-519-5900",
+  "url": "https://www.geumjeong.go.kr/gslib/index.geumj",
+  "lat": 35.23899704,
+  "lng": 129.094208,
+  "closed": "매주 월요일+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 283,
+  "books": 92524,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 4787,
+  "org": "부산광역시 금정구청(공립)",
+  "updated": "2025-11-26",
+  "id": 34
+ },
+ {
+  "name": "금정도서관",
+  "type": "공공도서관",
+  "district": "금정구",
+  "address": "부산광역시 금정구 금정도서관로 33(청룡동)",
+  "phone": "051-519-5601",
+  "url": "http://library.geumjeong.go.kr",
+  "lat": 35.27261359,
+  "lng": 129.096181,
+  "closed": "매주 월요일+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 1168,
+  "books": 267548,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 8466,
+  "org": "부산광역시 금정구청(공립)",
+  "updated": "2025-11-26",
+  "id": 35
+ },
+ {
+  "name": "부산광역시립서동도서관",
+  "type": "공공도서관",
+  "district": "금정구",
+  "address": "부산광역시 금정구 서부로76번길 5(서동)",
+  "phone": "051-522-0456",
+  "url": "https://home.pen.go.kr/seodonglib",
+  "lat": 35.2198763331,
+  "lng": 129.0994233,
+  "closed": "매월 셋째주 월요일+넷째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 176,
+  "books": 110873,
+  "loanBooks": 20,
+  "loanDays": 15,
+  "area": 1072,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 36
+ },
+ {
+  "name": "고촌어울림도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 철마면 고촌로51",
+  "phone": "051-709-5381",
+  "url": "https://library.gijang.go.kr/gochon/main.do",
+  "lat": 35.23872961,
+  "lng": 129.1686978,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 194,
+  "books": 30016,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 710.9,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 37
+ },
+ {
+  "name": "교리도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 기장읍 차성로417번길 11",
+  "phone": "051-709-5375",
+  "url": "https://library.gijang.go.kr/gyori/main.do",
+  "lat": 35.25512522,
+  "lng": 129.2151737,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 160,
+  "books": 30416,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1045.92,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 38
+ },
+ {
+  "name": "기장도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 기장읍 차성동로126번길 13-5",
+  "phone": "051-709-5351",
+  "url": "http://library.gijang.go.kr/gijang/main.do",
+  "lat": 35.24968318,
+  "lng": 129.2173047,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "23:59"
+   ],
+   "sat": [
+    "07:00",
+    "23:59"
+   ],
+   "holiday": null
+  },
+  "seats": 524,
+  "books": 152861,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2513.75,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 39
+ },
+ {
+  "name": "내리새라도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 기장읍 기장대로51",
+  "phone": "051-709-3967",
+  "url": "https://library.gijang.go.kr/naeri/main.do",
+  "lat": 35.20182015,
+  "lng": 129.2061857,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 183,
+  "books": 30015,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 714.01,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 40
+ },
+ {
+  "name": "대라다목적도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 기장읍 차성서로86",
+  "phone": "051-709-3961",
+  "url": "http://library.gijang.go.kr/daera/main.do",
+  "lat": 35.24079915,
+  "lng": 129.2105922,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 265,
+  "books": 47179,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 982.79,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 41
+ },
+ {
+  "name": "정관도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 정관읍 정관중앙로100",
+  "phone": "051-709-3901",
+  "url": "http://library.gijang.go.kr/jglib/main.do",
+  "lat": 35.32529082,
+  "lng": 129.1817313,
+  "closed": "연중무휴(자료실 휴실 : 신정 명절연휴 매월 둘째 월요일)",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "23:59"
+   ],
+   "sat": [
+    "07:00",
+    "23:59"
+   ],
+   "holiday": [
+    "07:00",
+    "23:59"
+   ]
+  },
+  "seats": 977,
+  "books": 230384,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 7371.33,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 42
+ },
+ {
+  "name": "정관어린이도서관",
+  "type": "공공도서관",
+  "district": "기장군",
+  "address": "부산광역시 기장군 정관읍 정관8로 11",
+  "phone": "051-709-5386",
+  "url": "http://library.gijang.go.kr/jgchildlib/main.do",
+  "lat": 35.32389937,
+  "lng": 129.177611,
+  "closed": "매주 월요일+국가공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "20:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 136,
+  "books": 46713,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 827.95,
+  "org": "부산광역시 기장군청",
+  "updated": "2025-11-14",
+  "id": 43
+ },
+ {
+  "name": "LG메트로작은쌈지도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 신선로 566-2 (용호동)",
+  "phone": "051-612-2295",
+  "url": "",
+  "lat": 35.13049586,
+  "lng": 129.1120858,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 44,
+  "books": 23792,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 44
+ },
+ {
+  "name": "가보자 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 유엔평화로125번길 11-33 (대연동)",
+  "phone": "051-624-0191",
+  "url": "",
+  "lat": 35.12557248,
+  "lng": 129.0964723,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 27,
+  "books": 1781,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 45
+ },
+ {
+  "name": "감만꿈터",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 우암로 84-1, (감만동) 감만종합사회복지관",
+  "phone": "051-634-3415",
+  "url": "",
+  "lat": 35.11847034,
+  "lng": 129.0813474,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "21:00"
+   ],
+   "sat": [
+    "10:00",
+    "14:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 8771,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 46
+ },
+ {
+  "name": "글로벌도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로 34 (용호동, 일신프리빌리지) 글로벌어린이집",
+  "phone": "051-628-3900",
+  "url": "",
+  "lat": 35.12647943,
+  "lng": 129.1077413,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "08:00",
+    "19:30"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 2623,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 47
+ },
+ {
+  "name": "꿈이 자라는 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로219번길 59 (대연동) 교육관2층",
+  "phone": "051-621-2904",
+  "url": "",
+  "lat": 35.13779839,
+  "lng": 129.0901513,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "11:00",
+    "20:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 1517,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 48
+ },
+ {
+  "name": "다문화행복나눔 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 유엔평화로125번길 11-33 (대연동) 1층",
+  "phone": "051-625-1949",
+  "url": "",
+  "lat": 35.12557248,
+  "lng": 129.0964723,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "17:30"
+   ],
+   "sat": [
+    "09:30",
+    "17:30"
+   ],
+   "holiday": [
+    "09:30",
+    "17:30"
+   ]
+  },
+  "seats": 100,
+  "books": 1227,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 49
+ },
+ {
+  "name": "대동골문화센터작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 황령대로319번가길 147 (대연동) 대동골문화센터 3층",
+  "phone": "051-607-3384",
+  "url": "",
+  "lat": 35.15240242,
+  "lng": 129.0889854,
+  "closed": "월",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "18:00"
+   ]
+  },
+  "seats": 20,
+  "books": 5193,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 50
+ },
+ {
+  "name": "대천 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 유엔평화로47번길 125 (대연동) 3층",
+  "phone": "051-627-5622",
+  "url": "",
+  "lat": 35.13088489,
+  "lng": 129.0991001,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 1316,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 51
+ },
+ {
+  "name": "대한실버회 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 유엔평화로 152-2 (용당동, 용당한신문화타운) 207호",
+  "phone": "051-611-1091",
+  "url": "",
+  "lat": 35.12269032,
+  "lng": 129.0972125,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 1596,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 52
+ },
+ {
+  "name": "더블유아파트 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 분포로 145 (용호동, 더블유) A동 3층 작은도서관",
+  "phone": "051-621-6277",
+  "url": "",
+  "lat": 35.13418123,
+  "lng": 129.1112472,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 26,
+  "books": 2854,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 53
+ },
+ {
+  "name": "들꽃이야기 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로219번길 33 (대연동) 3층",
+  "phone": "051-621-9577",
+  "url": "",
+  "lat": 35.13667931,
+  "lng": 129.090301,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 11017,
+  "loanBooks": 2,
+  "loanDays": 15,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 54
+ },
+ {
+  "name": "로고스 마을 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로 295 (대연동) 세웅빌딩 8층",
+  "phone": "051-625-0691",
+  "url": "",
+  "lat": 35.13698543,
+  "lng": 129.0983153,
+  "closed": "화+목+토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "14:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 54,
+  "books": 1830,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 55
+ },
+ {
+  "name": "로뎀나무 아래 작은 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 고동골로97번길 87 (문현동) 샘솟는교회",
+  "phone": "051-636-2602",
+  "url": "",
+  "lat": 35.14616318,
+  "lng": 129.0750527,
+  "closed": "휴관",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 0,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 56
+ },
+ {
+  "name": "리인 꿈터 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 문현로 36-1 (문현동, 문현경동리인 1단지) 관리사무소",
+  "phone": "051-638-6651",
+  "url": "",
+  "lat": 35.14080597,
+  "lng": 129.0743676,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "21:00"
+   ],
+   "sat": [
+    "10:00",
+    "21:00"
+   ],
+   "holiday": [
+    "10:00",
+    "21:00"
+   ]
+  },
+  "seats": 30,
+  "books": 1050,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 57
+ },
+ {
+  "name": "문현마을문고",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로39번길 35 (문현동) 3층",
+  "phone": "051-642-1515",
+  "url": "",
+  "lat": 35.13856281,
+  "lng": 129.0721874,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 15,
+  "books": 1369,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 58
+ },
+ {
+  "name": "바다Dream작은도서관 들락날락",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 백운포로 110 (용호동) 남구국민체육센터2관 2층 바다Dream작은도서관 들락날락",
+  "phone": "051-624-1549",
+  "url": "",
+  "lat": 35.10387725,
+  "lng": 129.1082028,
+  "closed": "두번째 월+네번째 화",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "18:00"
+   ]
+  },
+  "seats": 20,
+  "books": 2105,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 59
+ },
+ {
+  "name": "밝은미래 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 고동골로 66 (문현동) 2층, 서더랜드어학원 내부",
+  "phone": "051-637-8166",
+  "url": "",
+  "lat": 35.14288708,
+  "lng": 129.0714431,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "16:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 1040,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 60
+ },
+ {
+  "name": "부산문현교회 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 고동골로 23 (문현동) 부산문현교회 204호 작은도서관",
+  "phone": "051-642-0725",
+  "url": "",
+  "lat": 35.13904343,
+  "lng": 129.070844,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "17:00"
+   ],
+   "sat": [
+    "09:30",
+    "11:30"
+   ],
+   "holiday": null
+  },
+  "seats": 29,
+  "books": 1557,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 61
+ },
+ {
+  "name": "부산시여성회관 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로 356 (대연동) 5층",
+  "phone": "051-610-2001",
+  "url": "",
+  "lat": 35.13909209,
+  "lng": 129.1045436,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 6501,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 62
+ },
+ {
+  "name": "북조아 작은 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 동제당로 258 (우암동) 1층 사무실",
+  "phone": "051-647-3655",
+  "url": "",
+  "lat": 35.12717204,
+  "lng": 129.0749124,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 9028,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 63
+ },
+ {
+  "name": "샘터꿈의도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 조각공원로27번길 12 (대연동) 2층",
+  "phone": "051-628-6009",
+  "url": "",
+  "lat": 35.12954575,
+  "lng": 129.1006511,
+  "closed": "월",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "18:00"
+   ]
+  },
+  "seats": 60,
+  "books": 17625,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 64
+ },
+ {
+  "name": "샘터작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로 205-11 (대연동) 3층 샘터작은 도서관",
+  "phone": "051-622-3130",
+  "url": "",
+  "lat": 35.1354766,
+  "lng": 129.0887268,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 3550,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 65
+ },
+ {
+  "name": "솔로몬 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 고동골로 5 (문현동) 문현중앙교회",
+  "phone": "070-7596-7189",
+  "url": "",
+  "lat": 35.13756531,
+  "lng": 129.0708246,
+  "closed": "월",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": [
+    "13:00",
+    "16:00"
+   ],
+   "holiday": [
+    "09:00",
+    "15:00"
+   ]
+  },
+  "seats": 32,
+  "books": 3336,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 66
+ },
+ {
+  "name": "수피아",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 장고개로85번길 14-37 (문현동, 문현해운맨션) 상가1층",
+  "phone": "051-631-1949",
+  "url": "",
+  "lat": 35.13215031,
+  "lng": 129.0685152,
+  "closed": "휴관",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 0,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 67
+ },
+ {
+  "name": "수학공방강장작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로42번길 95, (용호동) 해법수학학원",
+  "phone": "051-626-3257",
+  "url": "",
+  "lat": 35.12258493,
+  "lng": 129.109762,
+  "closed": "휴관",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 0,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 68
+ },
+ {
+  "name": "신나요 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 유엔평화로126번길 33 (용당동) 3층",
+  "phone": "070-8838-0650",
+  "url": "",
+  "lat": 35.12345816,
+  "lng": 129.0950396,
+  "closed": "월+일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:30"
+   ],
+   "sat": [
+    "10:00",
+    "17:30"
+   ],
+   "holiday": null
+  },
+  "seats": 50,
+  "books": 11900,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 69
+ },
+ {
+  "name": "올맘도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로 345 (대연동, 대연힐스테이트푸르지오) 주민카페2층",
+  "phone": "051-611-3040",
+  "url": "",
+  "lat": 35.13998175,
+  "lng": 129.1038533,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 55,
+  "books": 6895,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 70
+ },
+ {
+  "name": "용호 꿈꾸는 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로106번길 12 (용호동) 용호동",
+  "phone": "",
+  "url": "",
+  "lat": 35.12309786,
+  "lng": 129.1118206,
+  "closed": "휴관",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 0,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 71
+ },
+ {
+  "name": "작은나무 큰숲도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로159번길 10 (용호동) 2층",
+  "phone": "051-627-1692",
+  "url": "",
+  "lat": 35.11776747,
+  "lng": 129.1121649,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "13:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 2000,
+  "loanBooks": 10,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 72
+ },
+ {
+  "name": "작은나무숲 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 석포로32번길 29 (감만동) 1층",
+  "phone": "",
+  "url": "",
+  "lat": 35.1215567,
+  "lng": 129.0849757,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "12:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 25,
+  "books": 14000,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 73
+ },
+ {
+  "name": "작은도서관 소풍",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로198번길 19 (용호동) 3층",
+  "phone": "051-612-1962",
+  "url": "",
+  "lat": 35.11465935,
+  "lng": 129.1100164,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 10180,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 74
+ },
+ {
+  "name": "작은여울 도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 진남로232번길 51 (문현동) 3층",
+  "phone": "051-636-0086",
+  "url": "",
+  "lat": 35.14648813,
+  "lng": 129.078042,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 15,
+  "books": 2000,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 75
+ },
+ {
+  "name": "참사랑도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 동명로101번길 81 (용호동) 4층 참사랑교회",
+  "phone": "070-7594-8906",
+  "url": "",
+  "lat": 35.12356879,
+  "lng": 129.107647,
+  "closed": "토+일+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 1185,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 76
+ },
+ {
+  "name": "책나루작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 용호로 189-1 (용호동) 1층",
+  "phone": "051-611-0316",
+  "url": "",
+  "lat": 35.11535808,
+  "lng": 129.111474,
+  "closed": "월",
+  "hours": {
+   "weekday": [
+    "14:00",
+    "18:00"
+   ],
+   "sat": [
+    "14:00",
+    "18:00"
+   ],
+   "holiday": [
+    "14:00",
+    "18:00"
+   ]
+  },
+  "seats": 50,
+  "books": 8617,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 77
+ },
+ {
+  "name": "캐슬리안북카페",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 수영로325번길 61, (대연동, 대연동 롯데캐슬아파트) 캐슬리안북카페",
+  "phone": "051-626-9531",
+  "url": "",
+  "lat": 35.14090918,
+  "lng": 129.1000032,
+  "closed": "연중무휴",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "22:00"
+   ],
+   "sat": [
+    "10:00",
+    "22:00"
+   ],
+   "holiday": [
+    "10:00",
+    "22:00"
+   ]
+  },
+  "seats": 24,
+  "books": 1329,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 78
+ },
+ {
+  "name": "행복한 작은도서관",
+  "type": "작은도서관",
+  "district": "남구",
+  "address": "부산광역시 남구 홍곡로57번길 19 (감만동) 행복한도서관",
+  "phone": "051-636-0691",
+  "url": "",
+  "lat": 35.117401,
+  "lng": 129.083999,
+  "closed": "일+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "19:00"
+   ],
+   "sat": [
+    "10:00",
+    "16:00"
+   ],
+   "holiday": null
+  },
+  "seats": 50,
+  "books": 12500,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": null,
+  "org": "",
+  "updated": "2026-06-26",
+  "id": 79
+ },
+ {
+  "name": "동구도서관",
+  "type": "공공도서관",
+  "district": "동구",
+  "address": "부산광역시 동구 성북로 36번길 54",
+  "phone": "051-440-6411",
+  "url": "http://www.bsdonggu.go.kr/library",
+  "lat": 35.138064,
+  "lng": 129.052451,
+  "closed": "월+국경일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 272,
+  "books": 137520,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2462,
+  "org": "부산광역시 동구청",
+  "updated": "2025-12-16",
+  "id": 80
+ },
+ {
+  "name": "동구어린이영어도서관",
+  "type": "공공도서관",
+  "district": "동구",
+  "address": "부산광역시 동구 수성로 21",
+  "phone": "051-440-6471",
+  "url": "http://www.bsdonggu.go.kr/kidseng",
+  "lat": 35.13462651,
+  "lng": 129.0419717,
+  "closed": "월+국경일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 90,
+  "books": 47204,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 843,
+  "org": "부산광역시 동구청",
+  "updated": "2025-12-16",
+  "id": 81
+ },
+ {
+  "name": "부산광역시립중앙도서관 수정분관",
+  "type": "공공도서관",
+  "district": "동구",
+  "address": "부산광역시 동구 홍곡로 53 (수정동)",
+  "phone": "051-440-0300",
+  "url": "https://home.pen.go.kr/joonganglib",
+  "lat": 35.1244672,
+  "lng": 129.0404626,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 235,
+  "books": 77728,
+  "loanBooks": 30,
+  "loanDays": 15,
+  "area": 1463,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 82
+ },
+ {
+  "name": "동래읍성도서관",
+  "type": "공공도서관",
+  "district": "동래구",
+  "address": "부산광역시 동래구 동래로159번길153 (칠산동)",
+  "phone": "051-550-6901",
+  "url": "http://lib.dongnae.go.kr/dongnae",
+  "lat": 35.20716823,
+  "lng": 129.0947605,
+  "closed": "매주 월요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 179,
+  "books": 63406,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 956.38,
+  "org": "부산광역시 동래구청",
+  "updated": "2025-11-19",
+  "id": 83
+ },
+ {
+  "name": "부산광역시립명장도서관",
+  "type": "공공도서관",
+  "district": "동래구",
+  "address": "부산광역시 동래구 명안로46번길 35 (명장동)",
+  "phone": "051-527-0583",
+  "url": "https://home.pen.go.kr/mjlib",
+  "lat": 35.2008805,
+  "lng": 129.106553,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 150,
+  "books": 142692,
+  "loanBooks": 30,
+  "loanDays": 15,
+  "area": 1670,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 84
+ },
+ {
+  "name": "안락누리도서관",
+  "type": "공공도서관",
+  "district": "동래구",
+  "address": "부산광역시 동래구 명안로 10번길 64 (안락동)",
+  "phone": "051-550-6911",
+  "url": "http://lib.dongnae.go.kr/allak",
+  "lat": 35.19698358,
+  "lng": 129.107726,
+  "closed": "매주 월요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 186,
+  "books": 64808,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 993.41,
+  "org": "부산광역시 동래구청",
+  "updated": "2025-11-19",
+  "id": 85
+ },
+ {
+  "name": "감고개공원작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 가야대로548번길 109",
+  "phone": "070-4139-2580",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.148458,
+  "lng": 129.0334814,
+  "closed": "일+월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 4831,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 85.14,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 86
+ },
+ {
+  "name": "꿈자람작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 전포대로190번길 35",
+  "phone": "070-8933-6393",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.15364347,
+  "lng": 129.0675376,
+  "closed": "일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "13:30"
+   ],
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 5009,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 117.23,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 87
+ },
+ {
+  "name": "당감1동작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 동평로44번길 49-6",
+  "phone": "051-605-6787",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1644448,
+  "lng": 129.0356839,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 50,
+  "books": 9782,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 185.18,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 88
+ },
+ {
+  "name": "범천작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 신암로 48",
+  "phone": "051-605-6971",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1465101,
+  "lng": 129.0562321,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 42,
+  "books": 12937,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 145.5,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 89
+ },
+ {
+  "name": "부산광역시립부전도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 동천로 79 (부전동)",
+  "phone": "051-860-0843",
+  "url": "https://home.pen.go.kr/bujunlib/main.do",
+  "lat": 35.1558742,
+  "lng": 129.0621987707,
+  "closed": "매월 셋째주 월요일+넷째주 월요일, 국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 0,
+  "books": 275462,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 2704,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 90
+ },
+ {
+  "name": "부산광역시립시민도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 월드컵대로 462(초읍동)",
+  "phone": "051-810-8200",
+  "url": "https://home.pen.go.kr/siminlib",
+  "lat": 35.182825,
+  "lng": 129.050152,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 1374,
+  "books": 703746,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 12513,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 91
+ },
+ {
+  "name": "부산영어도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 가야대로 734 (부전동)",
+  "phone": "051-818-2800",
+  "url": "https://home.pen.go.kr/bellib",
+  "lat": 35.1568387,
+  "lng": 129.052094673,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "21:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 186,
+  "books": 65614,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1072,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 92
+ },
+ {
+  "name": "부산진구기적의도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 범양로125번길 19",
+  "phone": "051-605-8751",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin",
+  "lat": 35.17424224,
+  "lng": 129.0646912,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 205,
+  "books": 38288,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2200.39,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 93
+ },
+ {
+  "name": "부산진구당감도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 가야대로703번나길 33",
+  "phone": "051-605-8761",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin",
+  "lat": 35.1580196,
+  "lng": 129.0474894,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 195,
+  "books": 33805,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1389.36,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 94
+ },
+ {
+  "name": "부산진구어린이청소년도서관",
+  "type": "공공도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 백양순환로110번길 25",
+  "phone": "051-605-5801",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin",
+  "lat": 35.1690132,
+  "lng": 129.0396629,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 166,
+  "books": 42577,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 905.85,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 95
+ },
+ {
+  "name": "사랑방마실작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 당감서로100번길 100",
+  "phone": "051-914-6801",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1717751,
+  "lng": 129.0323825,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 25,
+  "books": 7309,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 92.2,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 96
+ },
+ {
+  "name": "양정2동작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 양정로15번길 26",
+  "phone": "051-605-6637",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1728816,
+  "lng": 129.0757379,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 32,
+  "books": 8418,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 113.5,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 97
+ },
+ {
+  "name": "연지동작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 국악로 30",
+  "phone": "051-605-6562",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1727752,
+  "lng": 129.0528545,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 11683,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 115.93,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 98
+ },
+ {
+  "name": "전포마루작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 동성로118번길 34",
+  "phone": "051-605-6685",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1616829,
+  "lng": 129.0662022,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 4908,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 95.65,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 99
+ },
+ {
+  "name": "전포어울더울작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 서전로58번길145",
+  "phone": "070-8230-8221",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.151362,
+  "lng": 129.066478,
+  "closed": "일+월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 4878,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 206.27,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 100
+ },
+ {
+  "name": "책마루작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 신천대로241번길 41",
+  "phone": "051-605-6442",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1632732,
+  "lng": 129.0485629,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 8295,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 92.86,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 101
+ },
+ {
+  "name": "한국신발관작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 백양대로 227",
+  "phone": "051-714-1533",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1573104,
+  "lng": 129.0257996,
+  "closed": "일+월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 60,
+  "books": 6509,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 516.8,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 102
+ },
+ {
+  "name": "행복마루작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 동평로406번길 38",
+  "phone": "051-605-5861",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1721368,
+  "lng": 129.0687365,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 32,
+  "books": 12601,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 122.51,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 103
+ },
+ {
+  "name": "행복마을작은도서관",
+  "type": "작은도서관",
+  "district": "부산진구",
+  "address": "부산광역시 부산진구 진사로83번길 21",
+  "phone": "051-925-0255",
+  "url": "https://www.busanjin.go.kr/library/index.busanjin?menuCd=DOM_000002101007000000",
+  "lat": 35.1442073,
+  "lng": 129.017198,
+  "closed": "토+일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 7380,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 84.42,
+  "org": "부산광역시 부산진구청",
+  "updated": "2026-01-14",
+  "id": 104
+ },
+ {
+  "name": "금곡도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 효열로203번길 34(금곡동)",
+  "phone": "051-309-6181",
+  "url": "https://www.bsbukgu.go.kr/bglib",
+  "lat": 35.26323389,
+  "lng": 129.0167168,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 97,
+  "books": 81148,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1772,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 105
+ },
+ {
+  "name": "덕천도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 의성로47번길 45-2(덕천동)",
+  "phone": "051-309-5581",
+  "url": "https://www.bsbukgu.go.kr/dclib",
+  "lat": 35.217111,
+  "lng": 129.011265,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 400,
+  "books": 43007,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2888,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 106
+ },
+ {
+  "name": "만덕도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 은행나무로 26(만덕동)",
+  "phone": "051-309-2097",
+  "url": "https://www.bsbukgu.go.kr/mdlib",
+  "lat": 35.207233,
+  "lng": 129.037782,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 173,
+  "books": 149752,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 3315,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 107
+ },
+ {
+  "name": "부산광역시립구포도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 백양대로1016번다길 43 (구포동)",
+  "phone": "051-330-6300",
+  "url": "https://home.pen.go.kr/gupolib",
+  "lat": 35.1939786,
+  "lng": 128.9960261,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 541,
+  "books": 283655,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 7403,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 108
+ },
+ {
+  "name": "상학도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 상학산복길 215(만덕동)",
+  "phone": "501-309-6177",
+  "url": "https://www.bsbukgu.go.kr/shlib",
+  "lat": 35.21714577,
+  "lng": 129.0402148,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 36,
+  "books": 10102,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 231,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 109
+ },
+ {
+  "name": "솔밭도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 금곡대로324번길 29(화명동)",
+  "phone": "051-309-6178",
+  "url": "https://www.bsbukgu.go.kr/sblib",
+  "lat": 35.23726524,
+  "lng": 129.0157741,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 43,
+  "books": 11413,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 187,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 110
+ },
+ {
+  "name": "화명도서관",
+  "type": "공공도서관",
+  "district": "북구",
+  "address": "부산광역시 북구 화명대로12번길 59(화명동)",
+  "phone": "051-309-6481",
+  "url": "https://www.bsbukgu.go.kr/hmlib",
+  "lat": 35.2321898,
+  "lng": 129.0093939,
+  "closed": "월+국가지정 공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 311,
+  "books": 171390,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 3859,
+  "org": "부산광역시 북구청",
+  "updated": "2026-02-11",
+  "id": 111
+ },
+ {
+  "name": "LH감전 꿈꾸는 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 백양대로 539 (감전동, 감전엘에이치아파트)",
+  "phone": "051-317-7739",
+  "url": "",
+  "lat": 35.1553808,
+  "lng": 128.99424,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 2332,
+  "loanBooks": 2,
+  "loanDays": 14,
+  "area": 110,
+  "org": "감전엘에이치아파트",
+  "updated": "2025-12-11",
+  "id": 112
+ },
+ {
+  "name": "고맙습니다 보물섬 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 모라로110번길 129 (모라동)",
+  "phone": "051-304-9876",
+  "url": "",
+  "lat": 35.1849444,
+  "lng": 128.9978728,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 76,
+  "books": 13213,
+  "loanBooks": 4,
+  "loanDays": 14,
+  "area": 219,
+  "org": "모라종합사회복지관",
+  "updated": "2025-12-11",
+  "id": 113
+ },
+ {
+  "name": "꿈나래 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 백양대로 527 (주례동)",
+  "phone": "051-314-8948",
+  "url": "http://www.swc.or.kr/",
+  "lat": 35.1554311,
+  "lng": 128.9947789,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 6775,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 109,
+  "org": "사상구종합사회복지관",
+  "updated": "2025-12-11",
+  "id": 114
+ },
+ {
+  "name": "다문화 도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 사상로 448 (모라동)",
+  "phone": "051-304-4724",
+  "url": "http://www.bfwc.or.kr",
+  "lat": 35.1843944,
+  "lng": 128.9869086,
+  "closed": "매주토요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 28,
+  "books": 4047,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 297,
+  "org": "(사)이주민과함께/부산외국인근로자지원센터",
+  "updated": "2025-12-11",
+  "id": 115
+ },
+ {
+  "name": "덕포1동 어린이복합문화공간 그리며, 들락날락 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 강선로 31 (덕포동)",
+  "phone": "051-310-3068",
+  "url": "",
+  "lat": 35.1692156,
+  "lng": 128.9857149,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 61,
+  "books": 2356,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 779,
+  "org": "덕포1동 작은도서관 운영위원회",
+  "updated": "2025-12-11",
+  "id": 116
+ },
+ {
+  "name": "모라1동 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 모라로 93 (모라동)",
+  "phone": "051-310-5242",
+  "url": "",
+  "lat": 35.18700199,
+  "lng": 128.9898757,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 44,
+  "books": 6180,
+  "loanBooks": 3,
+  "loanDays": 14,
+  "area": 152,
+  "org": "모라1동 작은도서관 자치운영위원회",
+  "updated": "2025-12-11",
+  "id": 117
+ },
+ {
+  "name": "백양낙조전망대 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 백양대로 499 (주례동)",
+  "phone": "051-310-4934",
+  "url": "",
+  "lat": 35.1538856,
+  "lng": 128.997471,
+  "closed": "매주월요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "20:00"
+   ],
+   "sat": [
+    "09:00",
+    "20:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 16,
+  "books": 1042,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 109,
+  "org": "부산광역시 사상구청 도시재생과",
+  "updated": "2025-12-11",
+  "id": 118
+ },
+ {
+  "name": "부산광역시 여성문화회관 도서정보자료실",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 학감대로 95 (학장동)",
+  "phone": "051-320-8341",
+  "url": "",
+  "lat": 35.1400758,
+  "lng": 128.9898183,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 8,
+  "books": 3481,
+  "loanBooks": 3,
+  "loanDays": 14,
+  "area": 35,
+  "org": "부산광역시 여성문화회관",
+  "updated": "2025-12-11",
+  "id": 119
+ },
+ {
+  "name": "사상 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 새벽로168번길 61 (감전동)",
+  "phone": "051-310-3247",
+  "url": "https://www.sasang.go.kr/lll/index.sasang",
+  "lat": 35.1556235,
+  "lng": 128.9866922,
+  "closed": "매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "21:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 14,
+  "books": 7450,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 120,
+  "org": "부산광역시 사상구청 평생교육과",
+  "updated": "2025-12-11",
+  "id": 120
+ },
+ {
+  "name": "사상도서관",
+  "type": "공공도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 덕상로72번길 9 (덕포동)",
+  "phone": "051-310-7951",
+  "url": "http://www.sasang.go.kr/library",
+  "lat": 35.178106,
+  "lng": 128.9897944,
+  "closed": "매주월요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 330,
+  "books": 115499,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 3651,
+  "org": "부산광역시 사상구청 평생교육과",
+  "updated": "2025-12-11",
+  "id": 121
+ },
+ {
+  "name": "샘물 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 엄궁북로4번길 32-10 (엄궁동)",
+  "phone": "051-322-0675",
+  "url": "",
+  "lat": 35.1276617,
+  "lng": 128.9711253,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 3300,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 70,
+  "org": "박미주",
+  "updated": "2025-12-11",
+  "id": 122
+ },
+ {
+  "name": "어린이&가족도서관 꿈꾸는 글나라",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 낙동대로 704 (엄궁동)",
+  "phone": "051-243-4843",
+  "url": "http://www.gulnara.net",
+  "lat": 35.1246208,
+  "lng": 128.9670188,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": [
+    "10:00",
+    "14:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 10194,
+  "loanBooks": 2,
+  "loanDays": 14,
+  "area": 261,
+  "org": "(사)한국독서문화재단",
+  "updated": "2025-12-11",
+  "id": 123
+ },
+ {
+  "name": "엄궁쌈지 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 엄궁남로 20 (엄궁동)",
+  "phone": "051-711-3342",
+  "url": "",
+  "lat": 35.1251369,
+  "lng": 128.9701079,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 16,
+  "books": 6152,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 84,
+  "org": "엄궁 작은도서관 자치운영위원회",
+  "updated": "2025-12-11",
+  "id": 124
+ },
+ {
+  "name": "주례1동 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 가야대로255번길 17 (주례동)",
+  "phone": "051-310-3155",
+  "url": "",
+  "lat": 35.1513407,
+  "lng": 129.0010945,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 8,
+  "books": 2141,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 73,
+  "org": "주례1동 작은도서관 운영위원회",
+  "updated": "2025-12-11",
+  "id": 125
+ },
+ {
+  "name": "주례2동 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 주례로10번길 15 (주례동)",
+  "phone": "051-310-5269",
+  "url": "",
+  "lat": 35.1500644,
+  "lng": 129.0104185,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 6162,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 100,
+  "org": "주례2동 작은도서관 운영위원회",
+  "updated": "2025-12-11",
+  "id": 126
+ },
+ {
+  "name": "주례쌈지 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 냉정로 10 (주례동)",
+  "phone": "051-310-3345",
+  "url": "",
+  "lat": 35.1473538,
+  "lng": 129.0014188,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 14746,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 82,
+  "org": "주례쌈지 작은도서관 운영위원회",
+  "updated": "2025-12-11",
+  "id": 127
+ },
+ {
+  "name": "주례열린도서관",
+  "type": "공공도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 주례로 110",
+  "phone": "051-310-8501",
+  "url": "https://www.sasang.go.kr/jrlib/index.sasang",
+  "lat": 35.146913,
+  "lng": 129.0046022,
+  "closed": "매주월요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "20:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 233,
+  "books": 55524,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 4930,
+  "org": "부산광역시 사상구청 평생교육과",
+  "updated": "2025-12-11",
+  "id": 128
+ },
+ {
+  "name": "학마을 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 학감대로49번길 28-70 (학장동)",
+  "phone": "051-311-4017",
+  "url": "",
+  "lat": 35.1386522,
+  "lng": 128.9897461,
+  "closed": "매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "16:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 5484,
+  "loanBooks": 3,
+  "loanDays": 14,
+  "area": 89,
+  "org": "학장종합사회복지관",
+  "updated": "2025-12-11",
+  "id": 129
+ },
+ {
+  "name": "햇살나무 작은도서관",
+  "type": "작은도서관",
+  "district": "사상구",
+  "address": "부산광역시 사상구 모라로110번길 29 (모라동)",
+  "phone": "051-312-1391",
+  "url": "",
+  "lat": 35.1852579,
+  "lng": 128.9926394,
+  "closed": "매주토요일+매주일요일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 10285,
+  "loanBooks": 3,
+  "loanDays": 14,
+  "area": 99,
+  "org": "부산여성회",
+  "updated": "2025-12-11",
+  "id": 130
+ },
+ {
+  "name": "감천횃불작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 감내1로175번길 50(감천동)",
+  "phone": "051-203-0543",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.09646768,
+  "lng": 129.009166,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 13265,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 193,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 131
+ },
+ {
+  "name": "구평예들작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대로271번길 26",
+  "phone": "051-261-5274",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.07764584,
+  "lng": 128.9787162,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 51,
+  "books": 13354,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 250,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 132
+ },
+ {
+  "name": "까치마을작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 까치고개로 50-10 (괴정동)",
+  "phone": "051-202-0998",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.10448398,
+  "lng": 129.0063462,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 32,
+  "books": 10394,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 271,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 133
+ },
+ {
+  "name": "꿈꾸는작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 하신중앙로 185(신평동)",
+  "phone": "051-220-5285",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.09496763,
+  "lng": 128.9615408,
+  "closed": "토+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "19:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 13642,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 257,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 134
+ },
+ {
+  "name": "낫개작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대로429번길 22(다대동)",
+  "phone": "051-266-0027",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.06170768,
+  "lng": 128.9791965,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 74,
+  "books": 12677,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 197,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 135
+ },
+ {
+  "name": "노을나루길작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 하신번영로 377(하단동)",
+  "phone": "051-220-5207",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.11458863,
+  "lng": 128.9605228,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 60,
+  "books": 10652,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 194,
+  "org": "하단2동 행정복지센터",
+  "updated": "2026-03-13",
+  "id": 136
+ },
+ {
+  "name": "다대도서관",
+  "type": "공공도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대낙조2길 9(다대동)",
+  "phone": "051-220-5873",
+  "url": "https://www.saha.go.kr/dadaelib/main.do",
+  "lat": 35.05042816,
+  "lng": 128.9646728,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 545,
+  "books": 153601,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 3521,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 137
+ },
+ {
+  "name": "당리작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 승학로20번길 25 (당리동)",
+  "phone": "051-201-5930",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.10611138,
+  "lng": 128.9721727,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 55,
+  "books": 11057,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 224,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 138
+ },
+ {
+  "name": "동매누리작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대로130번길 112(신평동)",
+  "phone": "051-900-4060",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.09306308,
+  "lng": 128.9759483,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 36,
+  "books": 11855,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 236,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 139
+ },
+ {
+  "name": "두송작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대로429번길 30(다대동)",
+  "phone": "051-220-5386",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.06355298,
+  "lng": 128.9820086,
+  "closed": "국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 72,
+  "books": 8668,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 342,
+  "org": "다대2동 행정복지센터",
+  "updated": "2026-03-13",
+  "id": 140
+ },
+ {
+  "name": "마하골길벗작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 승학로161번길 80(괴정동)",
+  "phone": "051-294-8850",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.10545824,
+  "lng": 128.9849763,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 65,
+  "books": 11928,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 330,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 141
+ },
+ {
+  "name": "부산광역시립사하도서관",
+  "type": "공공도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 승학로 247 (괴정동)",
+  "phone": "051-961-2700",
+  "url": "https://home.pen.go.kr/sahalib",
+  "lat": 35.1033535,
+  "lng": 128.9910841,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 245,
+  "books": 102778,
+  "loanBooks": 10,
+  "loanDays": 15,
+  "area": 1766,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 142
+ },
+ {
+  "name": "수풀작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 다대로271번길 25",
+  "phone": "051-265-4832",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.07780116,
+  "lng": 128.978669,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 71,
+  "books": 7772,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 236,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 143
+ },
+ {
+  "name": "오작교작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 낙동대로171번길 30-5(괴정동)",
+  "phone": "051-220-5087",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.1003418,
+  "lng": 128.9980927,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 77,
+  "books": 13521,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 190,
+  "org": "괴정3동 행정복지센터",
+  "updated": "2026-03-13",
+  "id": 144
+ },
+ {
+  "name": "장림 무지개 작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 장림로161번길 14",
+  "phone": "051-265-0245",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.08336216,
+  "lng": 128.9670547,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 29,
+  "books": 14091,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 374,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 145
+ },
+ {
+  "name": "푸른누리작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 감천로83번길 26(감천동)",
+  "phone": "051-202-4466",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.08982535,
+  "lng": 129.0014147,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 41,
+  "books": 14188,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 200,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 146
+ },
+ {
+  "name": "하단도서관",
+  "type": "공공도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 하신번영로 245",
+  "phone": "051-220-0184",
+  "url": "https://www.saha.go.kr/hadanlib/main.do",
+  "lat": 35.10315761,
+  "lng": 128.9576458,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 229,
+  "books": 38462,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1897,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 147
+ },
+ {
+  "name": "회화나무작은도서관",
+  "type": "작은도서관",
+  "district": "사하구",
+  "address": "부산광역시 사하구 사하로141번나길 11-1",
+  "phone": "051-201-3096",
+  "url": "http://www.saha.go.kr/portal/contents.do?mId=0607010000",
+  "lat": 35.09399063,
+  "lng": 128.9916865,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 60,
+  "books": 18875,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 421,
+  "org": "부산광역시 사하구청",
+  "updated": "2026-03-13",
+  "id": 148
+ },
+ {
+  "name": "꽃마루어린이작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 꽃마을로 58 (서대신동3가) 꽃마루어린이작은도서관",
+  "phone": "051-240-6517",
+  "url": "",
+  "lat": 35.1192434,
+  "lng": 129.0117487,
+  "closed": "월, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "17:00"
+   ],
+   "holiday": [
+    "10:00",
+    "17:00"
+   ]
+  },
+  "seats": 6,
+  "books": 3112,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 102,
+  "org": "서대신4동주민센터",
+  "updated": "2025-11-10",
+  "id": 149
+ },
+ {
+  "name": "다독임작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 장군산로46번길 21 (암남동) 서구노인복지관",
+  "phone": "051-244-3541",
+  "url": "",
+  "lat": 35.0731237,
+  "lng": 129.014347,
+  "closed": "토, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 16,
+  "books": 2201,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 67,
+  "org": "부산광역시 서구노인복지관",
+  "updated": "2025-11-10",
+  "id": 150
+ },
+ {
+  "name": "닥밭골 작은 도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 보동길275번길 9 (동대신동2가) 2층",
+  "phone": "051-240-6424",
+  "url": "",
+  "lat": 35.1129633,
+  "lng": 129.0232222,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 7,
+  "books": 2652,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 45,
+  "org": "동대신2동주민센터",
+  "updated": "2025-11-10",
+  "id": 151
+ },
+ {
+  "name": "대신푸르지오 푸른도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 대영로38번길 11 (서대신동1가, 대신 푸르지오) 1층",
+  "phone": "051-257-8652",
+  "url": "",
+  "lat": 35.1073982,
+  "lng": 129.0161323,
+  "closed": "공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "18:00"
+   ]
+  },
+  "seats": 30,
+  "books": 3681,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": 149,
+  "org": "대신푸르지오아파트입주자대표회의",
+  "updated": "2025-11-10",
+  "id": 152
+ },
+ {
+  "name": "동서남-BOOK 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 해돋이로 288 (부민동3가) 동서남-BOOK 작은도서관",
+  "phone": "",
+  "url": "",
+  "lat": 35.1019678,
+  "lng": 129.0166023,
+  "closed": "월, 공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:10",
+    "18:00"
+   ],
+   "holiday": [
+    "10:10",
+    "18:00"
+   ]
+  },
+  "seats": 15,
+  "books": 7050,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 80,
+  "org": "동서남-BOOK 작은도서관",
+  "updated": "2025-11-10",
+  "id": 153
+ },
+ {
+  "name": "부민작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 해돋이로 313, (부민동3가, 부민 이 편한세상) 부민 이편한세상아파트",
+  "phone": "051-255-1606",
+  "url": "",
+  "lat": 35.1042158,
+  "lng": 129.0167442,
+  "closed": "토, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "13:30",
+    "17:30"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 11233,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 41,
+  "org": "부산시구덕시립도서관",
+  "updated": "2025-11-10",
+  "id": 154
+ },
+ {
+  "name": "부산광역시립구덕도서관",
+  "type": "공공도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 대신공원로 41 (서대신동3가)",
+  "phone": "051-220-3800",
+  "url": "https://home.pen.go.kr/guducklib",
+  "lat": 35.1239356301,
+  "lng": 129.0184833474,
+  "closed": "매월 셋째주 월요일+넷째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 130,
+  "books": 113413,
+  "loanBooks": 30,
+  "loanDays": 15,
+  "area": 1314,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 155
+ },
+ {
+  "name": "부산기독교 종합사회복지관 강유두작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 까치고개로229번길 40, (토성동2가) 2층",
+  "phone": "051-257-9404",
+  "url": "",
+  "lat": 35.101578,
+  "lng": 129.0211493,
+  "closed": "토, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:30"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 40,
+  "books": 7544,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": 147,
+  "org": "사회복지법인 감리회 태화복지재단",
+  "updated": "2025-11-10",
+  "id": 156
+ },
+ {
+  "name": "부산대학교병원 작은(쌈지)도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 구덕로 179 (아미동1가) B동 2층",
+  "phone": "051-240-7494",
+  "url": "",
+  "lat": 35.101055,
+  "lng": 129.0192461,
+  "closed": "토, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "16:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 2484,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": 48,
+  "org": "부산대학교병원",
+  "updated": "2025-11-10",
+  "id": 157
+ },
+ {
+  "name": "부산연탄은행 마르지 않는 샘",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 구덕로157번길 33-1 (아미동2가) 작은도서관 1층",
+  "phone": "051-246-2464",
+  "url": "",
+  "lat": 35.0987012,
+  "lng": 129.0180972,
+  "closed": "토, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 14,
+  "books": 9922,
+  "loanBooks": 5,
+  "loanDays": 7,
+  "area": 58,
+  "org": "부산연탄은행",
+  "updated": "2025-11-10",
+  "id": 158
+ },
+ {
+  "name": "샤롯데 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 대티로 161 (서대신동3가, 대신 롯데캐슬) 샤롯데 작은도서관",
+  "phone": "051-255-9008",
+  "url": "",
+  "lat": 35.1166323,
+  "lng": 129.010293,
+  "closed": "월, 공휴일",
+  "hours": {
+   "weekday": [
+    "14:00",
+    "18:00"
+   ],
+   "sat": [
+    "14:00",
+    "18:00"
+   ],
+   "holiday": [
+    "14:00",
+    "18:00"
+   ]
+  },
+  "seats": 16,
+  "books": 4068,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": 56,
+  "org": "대신롯데캐슬아파트입주자대표회의",
+  "updated": "2025-11-10",
+  "id": 159
+ },
+ {
+  "name": "송도바다 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 충무대로 83 (암남동) 1층",
+  "phone": "051-240-6664",
+  "url": "",
+  "lat": 35.0798918,
+  "lng": 129.0209553,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 34,
+  "books": 7050,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 168,
+  "org": "암남동주민센터",
+  "updated": "2025-11-10",
+  "id": 160
+ },
+ {
+  "name": "송도제일교회문고",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 성산길 46 (암남동) 송도제일교회",
+  "phone": "051-248-6071",
+  "url": "",
+  "lat": 35.0813299,
+  "lng": 129.0128697,
+  "closed": "월, 화, 수, 목, 금, 토",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": [
+    "10:00",
+    "16:00"
+   ]
+  },
+  "seats": 45,
+  "books": 5600,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": 150,
+  "org": "송도제일교회",
+  "updated": "2025-11-10",
+  "id": 161
+ },
+ {
+  "name": "숲속어린이 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 꽃마을로163번길 73 (서대신동3가) 구덕문화공원 내 숲속놀이터(2층)",
+  "phone": "070-8833-4168",
+  "url": "",
+  "lat": 35.1264144,
+  "lng": 129.0057482,
+  "closed": "월, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "17:30"
+   ],
+   "sat": [
+    "09:30",
+    "17:30"
+   ],
+   "holiday": [
+    "09:30",
+    "17:30"
+   ]
+  },
+  "seats": 20,
+  "books": 3886,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 238,
+  "org": "부산광역시 서구청",
+  "updated": "2025-11-10",
+  "id": 162
+ },
+ {
+  "name": "알로이시오기지 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 감천로 237 (암남동) 알로이시오기지 1동 3층",
+  "phone": "051-250-8900",
+  "url": "",
+  "lat": 35.0819411,
+  "lng": 129.0152239,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "16:30"
+   ],
+   "sat": [
+    "09:30",
+    "15:30"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 5602,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 119,
+  "org": "알로이시오기지",
+  "updated": "2025-11-10",
+  "id": 163
+ },
+ {
+  "name": "어울림 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 해돋이로 59 (남부민동) 2층",
+  "phone": "070-8892-6647",
+  "url": "",
+  "lat": 35.0846446,
+  "lng": 129.019696,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 4669,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 165,
+  "org": "남부민2동행정복지센터",
+  "updated": "2025-11-10",
+  "id": 164
+ },
+ {
+  "name": "짬짬이 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 구덕로295번길 4 (서대신동2가) 서대신골목시장 고객쉼터 내",
+  "phone": "070-4134-3284",
+  "url": "",
+  "lat": 35.110417,
+  "lng": 129.0173216,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:30",
+    "13:30"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 4224,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 65,
+  "org": "서대신1동행정복지센터",
+  "updated": "2025-11-10",
+  "id": 165
+ },
+ {
+  "name": "천마니 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 까치고개로197번길 46 (아미동2가) 1층",
+  "phone": "051-241-6001",
+  "url": "",
+  "lat": 35.1019775,
+  "lng": 129.0175964,
+  "closed": "월, 일 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 31,
+  "books": 5204,
+  "loanBooks": 2,
+  "loanDays": 7,
+  "area": 187,
+  "org": "부산서구문화원",
+  "updated": "2025-11-10",
+  "id": 166
+ },
+ {
+  "name": "초장동꿈터작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 초장로27번길 32 (초장동) 지하",
+  "phone": "051-240-6565",
+  "url": "",
+  "lat": 35.0959785,
+  "lng": 129.0202897,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 24,
+  "books": 5500,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 198,
+  "org": "초장동주민센터",
+  "updated": "2025-11-10",
+  "id": 167
+ },
+ {
+  "name": "한새마을 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 대신로 27, (서대신동3가) 서대신3동주민센터 3층",
+  "phone": "051-290-5273",
+  "url": "",
+  "lat": 35.1134638,
+  "lng": 129.0119404,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 52,
+  "books": 5188,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 106,
+  "org": "서대신3동주민센터",
+  "updated": "2025-11-10",
+  "id": 168
+ },
+ {
+  "name": "한형석 자유아동극장 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 해돋이로 297 (부민동3가) 한형석 자유아동극장 2층",
+  "phone": "051-240-4081",
+  "url": "",
+  "lat": 35.1028984,
+  "lng": 129.0163506,
+  "closed": "월, 일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 10,
+  "books": 1396,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 36,
+  "org": "부산광역시 서구청",
+  "updated": "2025-11-10",
+  "id": 169
+ },
+ {
+  "name": "향기나는 작은도서관",
+  "type": "작은도서관",
+  "district": "서구",
+  "address": "부산광역시 서구 구덕로280번길 32 (동대신동1가) 동대신1동주민센터",
+  "phone": "051-240-6403",
+  "url": "",
+  "lat": 35.1096264,
+  "lng": 129.0202187,
+  "closed": "일, 공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 18,
+  "books": 3922,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 35,
+  "org": "동대신1동주민센터",
+  "updated": "2025-11-10",
+  "id": 170
+ },
+ {
+  "name": "망미도서관",
+  "type": "공공도서관",
+  "district": "수영구",
+  "address": "부산광역시 수영구 연수로 315번길 23",
+  "phone": "051-610-4705",
+  "url": "http://www.suyeong.go.kr/library/index.suyeong",
+  "lat": 35.1734151,
+  "lng": 129.104916,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 150,
+  "books": 77879,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 930,
+  "org": "부산광역시 수영구청",
+  "updated": "2026-06-10",
+  "id": 171
+ },
+ {
+  "name": "망미작은도서관",
+  "type": "작은도서관",
+  "district": "수영구",
+  "address": "부산광역시 수영구 연수로275번길 30",
+  "phone": "051-610-4219",
+  "url": "http://www.suyeong.go.kr/library/index.suyeong",
+  "lat": 35.17451226,
+  "lng": 129.101071,
+  "closed": "일+월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 2392,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 217.75,
+  "org": "부산광역시 수영구청",
+  "updated": "2026-06-10",
+  "id": 172
+ },
+ {
+  "name": "민락작은도서관",
+  "type": "작은도서관",
+  "district": "수영구",
+  "address": "부산광역시 수영구 광안해변로295번길 20",
+  "phone": "051-610-6098",
+  "url": "http://www.suyeong.go.kr/library/index.suyeong",
+  "lat": 35.15725991,
+  "lng": 129.1254341,
+  "closed": "일+월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 35,
+  "books": 19700,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 154,
+  "org": "부산광역시 수영구청",
+  "updated": "2026-06-10",
+  "id": 173
+ },
+ {
+  "name": "수영구도서관",
+  "type": "공공도서관",
+  "district": "수영구",
+  "address": "부산광역시 수영구 남천서로 33",
+  "phone": "051-610-3993",
+  "url": "http://www.suyeong.go.kr/library/index.suyeong",
+  "lat": 35.14438692,
+  "lng": 129.105318,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 532,
+  "books": 153414,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 4290.38,
+  "org": "부산광역시 수영구청",
+  "updated": "2026-06-10",
+  "id": 174
+ },
+ {
+  "name": "수영구어린이도서관",
+  "type": "공공도서관",
+  "district": "수영구",
+  "address": "부산광역시 수영구 장대골로 75-6",
+  "phone": "051-610-3891",
+  "url": "http://www.suyeong.go.kr/library/index.suyeong",
+  "lat": 35.15974715,
+  "lng": 129.1049944,
+  "closed": "월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 125,
+  "books": 37922,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 952.54,
+  "org": "부산광역시 수영구청",
+  "updated": "2026-06-10",
+  "id": 175
+ },
+ {
+  "name": "밤골작은도서관",
+  "type": "작은도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 금련로 24번길33(연산동)",
+  "phone": "051-665-4513",
+  "url": "https://www.yeonje.go.kr/library/contents.do?mId=0102050000",
+  "lat": 35.1720557,
+  "lng": 129.0944725,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "14:00"
+   ]
+  },
+  "seats": 33,
+  "books": 11928,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 138.64,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 176
+ },
+ {
+  "name": "배산작은도서관",
+  "type": "작은도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 배산북로8(연산동)",
+  "phone": "051-665-4508",
+  "url": "https://www.yeonje.go.kr/library/contents.do?mId=0102060000",
+  "lat": 35.17509425,
+  "lng": 129.0933137,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "14:00"
+   ]
+  },
+  "seats": 35,
+  "books": 17250,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 194.98,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 177
+ },
+ {
+  "name": "부산광역시립연산도서관",
+  "type": "공공도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 고분로191번길 16 (연산동)",
+  "phone": "051-792-5400",
+  "url": "https://home.pen.go.kr/yeonsanlib",
+  "lat": 35.1858077051,
+  "lng": 129.1043221514,
+  "closed": "매월 셋째주 월요일+넷째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 235,
+  "books": 126786,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1370,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 178
+ },
+ {
+  "name": "솔벗작은도서관",
+  "type": "작은도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 아시아드대로22번길15(거제동)",
+  "phone": "051-665-4511",
+  "url": "https://www.yeonje.go.kr/library/contents.do?mId=0102030000",
+  "lat": 35.18764403,
+  "lng": 129.0701317,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "19:00"
+   ],
+   "sat": [
+    "10:00",
+    "14:00"
+   ],
+   "holiday": [
+    "10:00",
+    "14:00"
+   ]
+  },
+  "seats": 20,
+  "books": 11457,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 138.32,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 179
+ },
+ {
+  "name": "연산도서관",
+  "type": "공공도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 고분로191번길 16",
+  "phone": "051-792-5400",
+  "url": "https://home.pen.go.kr/yeonsanlib/main.do",
+  "lat": 35.185874,
+  "lng": 129.1043222,
+  "closed": "매주 셋째, 넷째 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 330,
+  "books": 133316,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1370,
+  "org": "부산광역시 교육청",
+  "updated": "2025-11-12",
+  "id": 180
+ },
+ {
+  "name": "연제도서관",
+  "type": "공공도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 황령산로 612(연산동)",
+  "phone": "051-665-5511",
+  "url": "http://www.yeonje.go.kr/library/main.do",
+  "lat": 35.17414442,
+  "lng": 129.0829683,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 193,
+  "books": 146090,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2016.98,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 181
+ },
+ {
+  "name": "연제만화도서관",
+  "type": "공공도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 연수로208번길 16(연산동)",
+  "phone": "051-665-5530",
+  "url": "https://www.yeonje.go.kr/manhwalib/main.do",
+  "lat": 35.1729742,
+  "lng": 129.0929156,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 189,
+  "books": 32094,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2067.42,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 182
+ },
+ {
+  "name": "토곡어린이작은도서관",
+  "type": "작은도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 고분로241번길 26(연산동) 2층",
+  "phone": "051-665-5527",
+  "url": "https://www.yeonje.go.kr/library/contents.do?mId=0102070000",
+  "lat": 35.18575516,
+  "lng": 129.1086779,
+  "closed": "매주 일+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 43,
+  "books": 3662,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 176.75,
+  "org": "연제이웃사랑회",
+  "updated": "2025-11-12",
+  "id": 183
+ },
+ {
+  "name": "해맞이작은도서관",
+  "type": "작은도서관",
+  "district": "연제구",
+  "address": "부산광역시 연제구 해맞이로 43번길 36",
+  "phone": "051-665-4518",
+  "url": "https://www.yeonje.go.kr/library/contents.do?mId=0102040000",
+  "lat": 35.17937101,
+  "lng": 129.066573,
+  "closed": "매주 월+국가지정공휴일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "19:00"
+   ],
+   "sat": [
+    "10:00",
+    "14:00"
+   ],
+   "holiday": [
+    "10:00",
+    "14:00"
+   ]
+  },
+  "seats": 28,
+  "books": 11217,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 143.55,
+  "org": "부산광역시 연제구청",
+  "updated": "2025-11-12",
+  "id": 184
+ },
+ {
+  "name": "꿈나무 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 한사랑길63(영선동1가)",
+  "phone": "051-415-6351",
+  "url": "",
+  "lat": 35.0897278,
+  "lng": 129.0440196,
+  "closed": "휴관중",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 60,
+  "books": 1500,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 63.63,
+  "org": "우리교회",
+  "updated": "2026-01-02",
+  "id": 185
+ },
+ {
+  "name": "남항 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 절영로 71(남항동2가)",
+  "phone": "051-419-5677",
+  "url": "",
+  "lat": 35.08855518,
+  "lng": 129.0390498,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 32,
+  "books": 10816,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 123.4,
+  "org": "남항동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 186
+ },
+ {
+  "name": "다문화 작은도서관 모두",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 태종로422번길 21(청학동) 2층",
+  "phone": "051-412-0511",
+  "url": "",
+  "lat": 35.08927084,
+  "lng": 129.0670963,
+  "closed": "1,4주 토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "13:00",
+    "17:00"
+   ],
+   "holiday": null
+  },
+  "seats": 26,
+  "books": 11000,
+  "loanBooks": 3,
+  "loanDays": 14,
+  "area": 138,
+  "org": "동삼종합사회복지관",
+  "updated": "2026-01-02",
+  "id": 187
+ },
+ {
+  "name": "담쟁이 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 대교로6번길 5(봉래동3가)",
+  "phone": "051-419-5624",
+  "url": "",
+  "lat": 35.09350456,
+  "lng": 129.0443849,
+  "closed": "휴관중",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 4685,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 94.92,
+  "org": "봉래1동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 188
+ },
+ {
+  "name": "도래샘 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 중복길 458(신선동1가)",
+  "phone": "051-419-5607",
+  "url": "",
+  "lat": 35.08875384,
+  "lng": 129.0482886,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 1100,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 50.66,
+  "org": "신선동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 189
+ },
+ {
+  "name": "리빙스턴 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 남항로10번길 15(남항동2가)",
+  "phone": "051-413-1101",
+  "url": "",
+  "lat": 35.08898767,
+  "lng": 129.0375213,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:30",
+    "17:30"
+   ],
+   "sat": [
+    "09:30",
+    "17:30"
+   ],
+   "holiday": null
+  },
+  "seats": 18,
+  "books": 1255,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 71.28,
+  "org": "제3영도교회",
+  "updated": "2026-01-02",
+  "id": 190
+ },
+ {
+  "name": "스케치북작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 일산봉로 21",
+  "phone": "051-412-7040",
+  "url": "",
+  "lat": 35.08436024,
+  "lng": 129.0648142,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 1300,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 91,
+  "org": "기쁜소식 영도교회",
+  "updated": "2026-01-02",
+  "id": 191
+ },
+ {
+  "name": "아랫서발작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 동삼오션로27",
+  "phone": "051-412-7040",
+  "url": "",
+  "lat": 35.06836902,
+  "lng": 129.0830026,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 3000,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 129,
+  "org": "동삼2동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 192
+ },
+ {
+  "name": "어울림마당 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 청학남로13번길 18(청학동)",
+  "phone": "051-419-5711",
+  "url": "",
+  "lat": 35.09075245,
+  "lng": 129.0594969,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 24,
+  "books": 5457,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 108.98,
+  "org": "청학2동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 193
+ },
+ {
+  "name": "영도구청 도서자료관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 태종로 423(청학동)",
+  "phone": "051-419-4262",
+  "url": "",
+  "lat": 35.09121745,
+  "lng": 129.0679105,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 10208,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 117.68,
+  "org": "부산광역시 영도구청",
+  "updated": "2026-01-02",
+  "id": 194
+ },
+ {
+  "name": "영도도서관",
+  "type": "공공도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 함지로79번길6(동삼동)",
+  "phone": "051-419-4821",
+  "url": "http://www.yeongdo.go.kr/library.web",
+  "lat": 35.07526538,
+  "lng": 129.066859,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 254,
+  "books": 125185,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 2128,
+  "org": "부산광역시 영도구청",
+  "updated": "2026-01-02",
+  "id": 195
+ },
+ {
+  "name": "영도도서관 남항분관",
+  "type": "공공도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 절영로71(남항동2가)",
+  "phone": "051-419-5673",
+  "url": "http://www.yeongdo.go.kr/library/01351/01981.web",
+  "lat": 35.08855518,
+  "lng": 129.0390498,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 50,
+  "books": 52382,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 1192,
+  "org": "부산광역시 영도구청",
+  "updated": "2026-01-02",
+  "id": 196
+ },
+ {
+  "name": "영도센트럴에일린의 뜰 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 태종로 172(봉래동4가)",
+  "phone": "051-418-8847",
+  "url": "",
+  "lat": 35.09280948,
+  "lng": 129.0483948,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "13:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 26,
+  "books": 1050,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 96,
+  "org": "영도센트럴에일린의뜰",
+  "updated": "2026-01-02",
+  "id": 197
+ },
+ {
+  "name": "영도자원순환센터 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 해양로 202(동삼동)",
+  "phone": "051-419-4462",
+  "url": "",
+  "lat": 35.0879428,
+  "lng": 129.0719671,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 24,
+  "books": 1007,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 13.33,
+  "org": "부산광역시 영도구청 청소행정과",
+  "updated": "2026-01-02",
+  "id": 198
+ },
+ {
+  "name": "영선나릿 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 꿈나무길 25(영선동1가)",
+  "phone": "051-419-5528",
+  "url": "",
+  "lat": 35.09024437,
+  "lng": 129.0447328,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 6384,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 78.67,
+  "org": "영선1동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 199
+ },
+ {
+  "name": "찬새미 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 하나길 733(봉래동5가)",
+  "phone": "051-417-5982",
+  "url": "",
+  "lat": 35.0938222,
+  "lng": 129.0527128,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 4533,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 85.68,
+  "org": "봉래2동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 200
+ },
+ {
+  "name": "풀잎 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 영선대로65(영선동3가)",
+  "phone": "051-419-5541",
+  "url": "",
+  "lat": 35.08709058,
+  "lng": 129.041325,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 42,
+  "books": 9547,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 130.7,
+  "org": "영선2동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 201
+ },
+ {
+  "name": "한울마당 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 와치로161번길 37(동삼동)",
+  "phone": "051-419-5781",
+  "url": "",
+  "lat": 35.0811911,
+  "lng": 129.0654486,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 30,
+  "books": 7899,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 157.31,
+  "org": "동삼3동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 202
+ },
+ {
+  "name": "해돋이 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 봉래길 372(청학동)",
+  "phone": "051-419-5682",
+  "url": "",
+  "lat": 35.0911179,
+  "lng": 129.0567269,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "17:30"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 2215,
+  "loanBooks": 5,
+  "loanDays": 14,
+  "area": 72.1,
+  "org": "청학1동행정복지센터",
+  "updated": "2026-01-02",
+  "id": 203
+ },
+ {
+  "name": "홀리조이 작은도서관",
+  "type": "작은도서관",
+  "district": "영도구",
+  "address": "부산광역시 영도구 대교로50 (봉래동1가) 2층",
+  "phone": "051-415-4006",
+  "url": "",
+  "lat": 35.0949674,
+  "lng": 129.0401082,
+  "closed": "휴관중",
+  "hours": {
+   "weekday": null,
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 8,
+  "books": 3000,
+  "loanBooks": 0,
+  "loanDays": 0,
+  "area": 58.21,
+  "org": "대한예수교장로회 땅끝교회",
+  "updated": "2026-01-02",
+  "id": 204
+ },
+ {
+  "name": "고맙습니다.글마루작은도서관",
+  "type": "작은도서관",
+  "district": "중구",
+  "address": "부산광역시 중구 동영로 87-1",
+  "phone": "051-469-8451",
+  "url": "http://blog.naver.com/thanks_gmr",
+  "lat": 35.1127605,
+  "lng": 129.0316475,
+  "closed": "월요일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "20:00"
+   ],
+   "holiday": [
+    "10:00",
+    "20:00"
+   ]
+  },
+  "seats": 50,
+  "books": 12232,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 198.85,
+  "org": "부산어깨동무",
+  "updated": "2026-01-30",
+  "id": 205
+ },
+ {
+  "name": "닑다작은도서관",
+  "type": "작은도서관",
+  "district": "중구",
+  "address": "부산광역시 중구 대청로 61-2",
+  "phone": "051-743-7650",
+  "url": "https://www.smalllibrary.org/library/detail/1047678",
+  "lat": 35.10321832,
+  "lng": 129.026751,
+  "closed": "월요일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "18:00"
+   ],
+   "sat": [
+    "10:00",
+    "18:00"
+   ],
+   "holiday": [
+    "10:00",
+    "18:00"
+   ]
+  },
+  "seats": 50,
+  "books": 6365,
+  "loanBooks": 3,
+  "loanDays": 15,
+  "area": 94.44,
+  "org": "부산광역시 중구청",
+  "updated": "2026-01-30",
+  "id": 206
+ },
+ {
+  "name": "보수동책방골목어린이도서관",
+  "type": "어린이도서관",
+  "district": "중구",
+  "address": "부산광역시 중구 대청로 57-16",
+  "phone": "051-255-9141",
+  "url": "http://blog.naver.com/okelib",
+  "lat": 35.10337044,
+  "lng": 129.0262272,
+  "closed": "월요일",
+  "hours": {
+   "weekday": [
+    "10:00",
+    "20:00"
+   ],
+   "sat": [
+    "10:00",
+    "20:00"
+   ],
+   "holiday": [
+    "10:00",
+    "20:00"
+   ]
+  },
+  "seats": 40,
+  "books": 11279,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 181.76,
+  "org": "부산어깨동무",
+  "updated": "2026-01-30",
+  "id": 207
+ },
+ {
+  "name": "부산광역시립중앙도서관",
+  "type": "공공도서관",
+  "district": "중구",
+  "address": "부산광역시 중구 망양로193번길 146 (보수동1가)",
+  "phone": "051-250-0300",
+  "url": "https://home.pen.go.kr/joonganglib",
+  "lat": 35.1100476,
+  "lng": 129.0270859,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 492,
+  "books": 291647,
+  "loanBooks": 30,
+  "loanDays": 15,
+  "area": 6260,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 208
+ },
+ {
+  "name": "산리작은도서관",
+  "type": "작은도서관",
+  "district": "중구",
+  "address": "부산광역시 중구 영주로 21",
+  "phone": "051-462-5200",
+  "url": "",
+  "lat": 35.10946964,
+  "lng": 129.0313921,
+  "closed": "토+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": null,
+   "holiday": null
+  },
+  "seats": 12,
+  "books": 3343,
+  "loanBooks": 3,
+  "loanDays": 7,
+  "area": 53,
+  "org": "산리협동조합",
+  "updated": "2026-01-30",
+  "id": 209
+ },
+ {
+  "name": "반여도서관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 재반로282번길 38 (반여동)",
+  "phone": "051-749-6098",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.20202568,
+  "lng": 129.1338104,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 134,
+  "books": 61405,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 890.58,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 210
+ },
+ {
+  "name": "부산광역시립반송도서관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 아랫반송로 22 (반송동)",
+  "phone": "051-545-0102",
+  "url": "http://home.pen.go.kr/bansonglib",
+  "lat": 35.2250809,
+  "lng": 129.1483381,
+  "closed": "매월 첫째주 월요일+둘째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 221,
+  "books": 115645,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1824,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 211
+ },
+ {
+  "name": "부산광역시립해운대도서관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 양운로 183(좌동)",
+  "phone": "051-709-0900",
+  "url": "http://home.pen.go.kr/haeundaelib",
+  "lat": 35.1779725,
+  "lng": 129.1689174,
+  "closed": "매월 셋째주 월요일+넷째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 612,
+  "books": 234601,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 8555,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 212
+ },
+ {
+  "name": "부산광역시립해운대도서관 우동분관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 우동1로 89 (우동)",
+  "phone": "051-709-0980",
+  "url": "http://home.pen.go.kr/haeundaelib",
+  "lat": 35.1688857,
+  "lng": 129.1559789,
+  "closed": "매월 셋째주 월요일+넷째주 월요일+국가지정공휴일+대체공휴일",
+  "hours": {
+   "weekday": [
+    "07:00",
+    "22:00"
+   ],
+   "sat": [
+    "07:00",
+    "22:00"
+   ],
+   "holiday": null
+  },
+  "seats": 151,
+  "books": 83726,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1497,
+  "org": "부산광역시교육청",
+  "updated": "2026-01-21",
+  "id": 213
+ },
+ {
+  "name": "송정동어린이작은도서관",
+  "type": "작은도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 송정중앙로21번길 20 (송정동)",
+  "phone": "051-749-5896",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.18366028,
+  "lng": 129.2037147,
+  "closed": "일+월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 20,
+  "books": 2813,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 169.6,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 214
+ },
+ {
+  "name": "우2동어린이작은도서관",
+  "type": "작은도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 해운대로383번가길 7 (우동)",
+  "phone": "051-749-6658",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.17120796,
+  "lng": 129.1399344,
+  "closed": "일+월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 25,
+  "books": 3453,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 183,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 215
+ },
+ {
+  "name": "작은인문학도서관",
+  "type": "작은도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 센텀중앙로 170 (재송동)",
+  "phone": "051-749-2922",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.1820882,
+  "lng": 129.1214141,
+  "closed": "일+월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": null
+  },
+  "seats": 138,
+  "books": 19868,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 338.75,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 216
+ },
+ {
+  "name": "재송어린이도서관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 해운대로76번길 35-1 (재송동)",
+  "phone": "051-749-7631",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.18962799,
+  "lng": 129.1184917,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "18:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 154,
+  "books": 111925,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 1091.35,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 217
+ },
+ {
+  "name": "해운대인문학도서관",
+  "type": "공공도서관",
+  "district": "해운대구",
+  "address": "부산광역시 해운대구 반여로 132 (반여동)",
+  "phone": "051-749-6580",
+  "url": "http://www.haeundae.go.kr/library",
+  "lat": 35.20224301,
+  "lng": 129.1263049,
+  "closed": "월+공휴일",
+  "hours": {
+   "weekday": [
+    "09:00",
+    "22:00"
+   ],
+   "sat": [
+    "09:00",
+    "18:00"
+   ],
+   "holiday": [
+    "09:00",
+    "17:00"
+   ]
+  },
+  "seats": 371,
+  "books": 135635,
+  "loanBooks": 5,
+  "loanDays": 15,
+  "area": 2996.75,
+  "org": "부산광역시 해운대구청",
+  "updated": "2026-05-13",
+  "id": 218
+ }
+]

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>부산 도서관</title>
+  <meta name="description" content="부산의 공공·작은·어린이 도서관 위치, 이용시간, 홈페이지를 한눈에.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app" data-tab="list">
+    <header class="top">
+      <div class="title-row">
+        <h1>부산 도서관</h1>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="search">
+        <input id="q" type="search" placeholder="도서관 이름, 주소 검색" autocomplete="off" aria-label="검색">
+      </div>
+      <div class="chips" id="types" role="group" aria-label="도서관 유형"></div>
+      <div class="row">
+        <select id="district" aria-label="구·군"><option value="">전체 구·군</option></select>
+        <select id="sort" aria-label="정렬">
+          <option value="name">이름순</option>
+          <option value="seats">좌석 많은 순</option>
+          <option value="books">장서 많은 순</option>
+          <option value="near">내 위치 가까운 순</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="panel list-panel" id="listPanel" aria-label="도서관 목록">
+        <ul class="cards" id="cards"></ul>
+        <p class="empty" id="empty" hidden>조건에 맞는 도서관이 없어요.</p>
+        <footer class="foot">
+          자료: 공공데이터포털 전국도서관표준데이터<br>
+          운영시간·휴관일은 바뀔 수 있으니 방문 전 홈페이지에서 확인하세요.
+        </footer>
+      </section>
+      <section class="panel map-panel" aria-label="지도">
+        <div id="map"></div>
+      </section>
+      <aside class="detail" id="detail" aria-hidden="true">
+        <div class="grab" id="grab"></div>
+        <button class="close" id="closeDetail" aria-label="닫기">✕</button>
+        <div class="detail-body" id="detailBody"></div>
+      </aside>
+    </main>
+
+    <nav class="tabs" aria-label="보기 전환">
+      <button data-tab="list" class="on">목록</button>
+      <button data-tab="map">지도</button>
+    </nav>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
