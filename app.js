@@ -31,6 +31,10 @@
   function fmt(n) { return n == null ? '-' : Number(n).toLocaleString('ko-KR'); }
   function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : ''; }
   function photoSrc(p) { return /^(https?:)?\/\//.test(p) ? p : 'images/' + encodeURI(p); }
+  /* 사진 규칙: images/도서관이름.jpg (추가 사진은 도서관이름_2.jpg ~ _4.jpg). extras.json에 photos를 적으면 그쪽이 우선. */
+  var MAX_PHOTOS = 4;
+  function autoPhoto(l, n) { return l.name + (n > 1 ? '_' + n : '') + '.jpg'; }
+  function mainPhoto(l) { return l.photos.length ? l.photos[0] : autoPhoto(l, 1); }
   function distKm(a, b, c, d) {
     var R = 6371, r = Math.PI / 180;
     var dLat = (c - a) * r, dLng = (d - b) * r;
@@ -184,11 +188,9 @@
       b.className = 'card' + (state.sel === l.id ? ' sel' : '');
       b.dataset.id = l.id;
       b.style.setProperty('--dot', color(l.type));
-      var thumb = l.photos.length
-        ? '<img src="' + esc(photoSrc(l.photos[0])) + '" alt="" loading="lazy">'
-        : esc(TYPE_ICON[l.type] || '📚');
       b.innerHTML =
-        '<div class="thumb">' + thumb + '</div>' +
+        '<div class="thumb"><span>' + esc(TYPE_ICON[l.type] || '📚') + '</span>' +
+          '<img class="thumb-img" src="' + esc(photoSrc(mainPhoto(l))) + '" alt="" loading="lazy"></div>' +
         '<div class="info">' +
           '<div class="name">' + esc(l.name) + '</div>' +
           '<div class="meta">' + esc(l.address.replace(/^부산광역시\s*/, '')) + '</div>' +
@@ -284,11 +286,19 @@
     var naver = 'https://map.naver.com/p/search/' + encodeURIComponent(l.address.replace(/\(.*$/, ''));
     var h = l.hours || {};
 
-    var photos = l.photos.length
-      ? '<div class="photos">' + l.photos.map(function (p) {
-          return '<img src="' + esc(photoSrc(p)) + '" alt="' + esc(l.name) + ' 사진" loading="lazy">';
-        }).join('') + '</div>' + (l.photoCredit ? '<p class="muted">사진: ' + esc(l.photoCredit) + '</p>' : '')
-      : '<div class="photo-empty">아직 등록된 사진이 없어요</div>';
+    // 사진: 처음엔 모두 숨기고, 불러오기 결과에 따라 사진 또는 '사진 보기' 안내를 보여준다 (bind()의 photoEvent 참고)
+    var explicit = l.photos.length > 0;
+    var first = explicit ? l.photos : [autoPhoto(l, 1)];
+    var naverPhoto = 'https://map.naver.com/p/search/' + encodeURIComponent('부산 ' + l.name);
+    var photos =
+      '<div class="photo-wrap" data-auto="' + (explicit ? '0' : '1') + '" data-name="' + esc(l.name) + '">' +
+        '<div class="photos" hidden>' + first.map(function (p, i) {
+          return '<img data-n="' + (i + 1) + '" src="' + esc(photoSrc(p)) + '" alt="' + esc(l.name) + ' 사진">';
+        }).join('') + '</div>' +
+        '<p class="muted credit" hidden>' + (l.photoCredit ? '사진: ' + esc(l.photoCredit) : '') + '</p>' +
+        '<div class="photo-empty" hidden><span>아직 등록된 사진이 없어요</span>' +
+          '<a class="btn" href="' + esc(naverPhoto) + '" target="_blank" rel="noopener">네이버지도에서 사진 보기</a></div>' +
+      '</div>';
 
     var fac = l.facilities.length
       ? '<div class="tags">' + l.facilities.map(function (f) { return '<span class="tag">' + esc(f) + '</span>'; }).join('') + '</div>'
@@ -420,6 +430,46 @@
       if (open) $('bookQ').focus();
       if (map) setTimeout(function () { map.invalidateSize(); }, 50);
     });
+    // 사진 불러오기 결과 처리 (img의 load/error는 버블링되지 않아 capture로 받는다)
+    $('cards').addEventListener('error', function (e) {
+      var t = e.target;
+      if (t && t.classList && t.classList.contains('thumb-img')) t.remove(); // 사진이 없으면 아이콘이 보인다
+    }, true);
+    function photoEvent(e) {
+      var img = e.target;
+      if (!img || img.tagName !== 'IMG' || !img.closest) return;
+      var wrap = img.closest('.photo-wrap');
+      if (!wrap) return;
+      var photos = wrap.querySelector('.photos');
+      var credit = wrap.querySelector('.credit');
+      var empty = wrap.querySelector('.photo-empty');
+      if (e.type === 'error') {
+        img.remove();
+      } else {
+        img.dataset.ok = '1';
+        var n = parseInt(img.dataset.n, 10);
+        if (wrap.dataset.auto === '1' && n < MAX_PHOTOS) { // 다음 사진(_2, _3, _4)이 있는지 이어서 확인
+          var nx = document.createElement('img');
+          nx.dataset.n = String(n + 1);
+          nx.alt = img.alt;
+          nx.src = photoSrc(autoPhoto({ name: wrap.dataset.name }, n + 1));
+          photos.appendChild(nx);
+        }
+      }
+      var loaded = photos.querySelectorAll('img[data-ok]').length;
+      var pending = photos.querySelectorAll('img:not([data-ok])').length;
+      if (loaded > 0) {
+        photos.hidden = false;
+        credit.hidden = !credit.textContent;
+        empty.hidden = true;
+      } else if (pending === 0) {
+        photos.hidden = true;
+        credit.hidden = true;
+        empty.hidden = false;
+      }
+    }
+    $('detailBody').addEventListener('load', photoEvent, true);
+    $('detailBody').addEventListener('error', photoEvent, true);
     $('closeDetail').addEventListener('click', closeDetail);
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
     document.querySelectorAll('.tabs button').forEach(function (b) {
