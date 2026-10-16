@@ -112,3 +112,7 @@ GitHub 저장소 Settings → Pages → Branch `main` / `/ (root)` 선택.
 ```
 
 `floor` 와 `name` 은 필수이고 `seats`(숫자), `note`(40자 이내)는 선택입니다. 같은 `floor` 끼리 묶여 표시되며 입력한 순서대로 나옵니다. 필터 태그(facilities)와는 별개로 보여주는 용도입니다.
+
+## 배포 후 화면이 옛날 모습일 때
+
+브라우저가 예전 `style.css`·`app.js` 를 기억하고 있으면 새 화면과 섞여 깨져 보일 수 있습니다. `index.html` 의 `style.css?v=...`, `app.js?v=...` 숫자를 바꿔서 올리면 모든 사용자에게 새 파일이 적용됩니다. 디자인이나 기능을 바꿀 때마다 이 숫자를 올려 주세요.
