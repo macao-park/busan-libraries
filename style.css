@@ -392,3 +392,6 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
   .title-row { margin-bottom: 8px; }
   h1 { font-size: 24px; }
 }
+
+.ico { font-style: normal; margin-right: 4px; }
+h1 small { font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--accent); margin-left: 6px; vertical-align: middle; }

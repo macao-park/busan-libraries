@@ -101,15 +101,15 @@
 
   /* ---------- 자동 필터 (CSV 데이터만으로 계산) ---------- */
   var AUTO = [
-    { id: 'open', label: '지금 열린 곳', fn: function (l) { return status(l).cls === 'open'; } },
-    { id: 'late', label: '21시 이후까지', fn: function (l) {
+    { id: 'open', icon: '🟢', label: '지금 열린 곳', fn: function (l) { return status(l).cls === 'open'; } },
+    { id: 'late', icon: '🌙', label: '21시 이후까지', fn: function (l) {
       var w = l.hours && l.hours.weekday; return !!w && toMin(w[1]) >= 21 * 60; } },
-    { id: 'sat', label: '토요일 운영', fn: function (l) {
+    { id: 'sat', icon: '📅', label: '토요일 운영', fn: function (l) {
       var c = parseClosed(l.closed); return !!(l.hours && l.hours.sat) && !c.all && c.days.indexOf('토') < 0; } },
-    { id: 'sun', label: '일요일 운영', fn: function (l) {
+    { id: 'sun', icon: '☀️', label: '일요일 운영', fn: function (l) {
       var c = parseClosed(l.closed); return !!(l.hours && l.hours.holiday) && !c.all && c.days.indexOf('일') < 0; } },
-    { id: 'seats200', label: '좌석 200석 이상', fn: function (l) { return (l.seats || 0) >= 200; } },
-    { id: 'books100k', label: '장서 10만권 이상', fn: function (l) { return (l.books || 0) >= 100000; } }
+    { id: 'seats200', icon: '💺', label: '좌석 200석 이상', fn: function (l) { return (l.seats || 0) >= 200; } },
+    { id: 'books100k', icon: '📚', label: '장서 10만권 이상', fn: function (l) { return (l.books || 0) >= 100000; } }
   ];
 
   function hasAny(l, tags) { return l.facilities.some(function (t) { return tags.indexOf(t) >= 0; }); }
@@ -123,6 +123,8 @@
     });
   }
 
+  var tagIcons = {};
+
   function load() {
     return Promise.all([
       getJSON('data/libraries.json'),
@@ -130,6 +132,7 @@
       getJSON('data/tags.json').catch(function () { return { groups: [] }; })
     ]).then(function (res) {
       groups = (res[2] && res[2].groups) || [];
+      tagIcons = (res[2] && res[2].icons) || {};
       var base = res[0], ex = res[1] || {}, ov = ex.overrides || {};
       var list = base.concat(ex.additions || []);
       list.forEach(function (l, i) {
@@ -180,11 +183,11 @@
   }
 
   // 칩 하나를 만든다: kind는 purpose | tag | auto
-  function chip(kind, value, label, count, set) {
+  function chip(kind, value, label, count, set, icon) {
     var lab = document.createElement('label');
     lab.className = 'chip' + (kind === 'purpose' ? ' purpose' : '');
     lab.innerHTML = '<input type="checkbox" data-kind="' + kind + '" value="' + esc(value) + '"><span>' +
-      esc(label) + (count != null ? ' <i>' + count + '</i>' : '') + '</span>';
+      (icon ? '<em class="ico" aria-hidden="true">' + esc(icon) + '</em>' : '') + esc(label) + (count != null ? ' <i>' + count + '</i>' : '') + '</span>';
     lab.querySelector('input').addEventListener('change', function (e) {
       if (e.target.checked) set.add(value); else set.delete(value);
       needFit = true;
@@ -199,7 +202,7 @@
     pBox.innerHTML = '';
     groups.forEach(function (g) {
       var n = libs.filter(function (l) { return hasAny(l, g.tags); }).length;
-      if (n > 0) pBox.appendChild(chip('purpose', g.id, g.label, n, state.purposes));
+      if (n > 0) pBox.appendChild(chip('purpose', g.id, g.label, n, state.purposes, g.icon));
     });
     pBox.hidden = !pBox.children.length;
 
@@ -208,7 +211,7 @@
     aBox.innerHTML = '';
     AUTO.forEach(function (a) {
       var n = libs.filter(a.fn).length;
-      aBox.appendChild(chip('auto', a.id, a.label, n, state.auto));
+      aBox.appendChild(chip('auto', a.id, a.label, n, state.auto, a.icon));
     });
 
     // 꼭 있어야 하는 시설: 확인된 도서관이 있는 태그만
@@ -225,7 +228,7 @@
       chips.className = 'chips wrap';
       g.tags.forEach(function (t) {
         var n = libs.filter(function (l) { return l.facilities.indexOf(t) >= 0; }).length;
-        if (n > 0) chips.appendChild(chip('tag', t, t, n, state.tags));
+        if (n > 0) chips.appendChild(chip('tag', t, t, n, state.tags, tagIcons[t]));
       });
       if (chips.children.length) { row.appendChild(h); row.appendChild(chips); tBox.appendChild(row); any = true; }
     });

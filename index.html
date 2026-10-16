@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>부산 도서관</title>
-  <meta name="description" content="부산의 공공·작은·어린이 도서관 위치, 이용시간, 홈페이지를 한눈에.">
+  <title>도이터 DOITEO · 부산 도서관 놀이터</title>
+  <meta name="description" content="도서관 + 놀이터. 책만 읽는 곳이 아닌, 놀러 가는 부산 도서관 지도. 부대시설과 운영시간을 한눈에.">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
   <div class="app" id="app" data-tab="list">
     <header class="top">
       <div class="title-row">
-        <h1>부산 도서관</h1>
+        <h1>도이터<small>DOITEO</small></h1>
         <span class="count" id="count"></span>
         <button class="book-toggle" id="bookToggle" type="button" aria-expanded="false" aria-controls="bookForm">책 검색</button>
       </div>
@@ -22,8 +22,8 @@
         </div>
         <button class="filter-btn" id="filterBtn" type="button" aria-haspopup="dialog">필터<span class="filter-n" id="filterN" hidden></span></button>
       </div>
-      <div class="chips" id="types" role="group" aria-label="도서관 유형"></div>
       <div class="chips purposes" id="purposes" role="group" aria-label="이용 목적" hidden></div>
+      <div class="chips" id="types" role="group" aria-label="도서관 유형"></div>
       <form class="book-form" id="bookForm" action="https://one-library.busan.go.kr/busanbooks/" method="get" target="_blank" rel="noopener" hidden>
         <input type="hidden" name="mode" value="tBookList">
         <input type="hidden" name="page_id" value="result">
