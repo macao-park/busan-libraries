@@ -3,8 +3,8 @@
   --ink: #000000;
   --paper: #ffffff;
   --hl: #ffe94a;
-  --serif: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", "Batang", serif;
-  --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --serif: var(--sans);
+  --sans: "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --tabs-h: 64px;
 }
 @media (prefers-color-scheme: dark) {
@@ -40,7 +40,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .search input {
   width: 100%; border: 1px solid var(--ink); background: var(--paper); border-radius: 0; padding: 11px 14px; outline: none;
 }
-.search input::placeholder, .book-form input::placeholder { color: var(--ink); opacity: 1; font-family: var(--serif); font-style: italic; }
+.search input::placeholder, .book-form input::placeholder { color: var(--ink); opacity: 1; }
 .search input:focus, .book-form input[type="search"]:focus { box-shadow: 0 0 0 2px var(--ink); }
 .chips { display: flex; gap: 8px; margin: 10px 0 8px; overflow-x: auto; scrollbar-width: none; }
 .chips::-webkit-scrollbar { display: none; }
@@ -59,7 +59,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .chip.purpose i { font-size: 11px; }
 .chip.purpose .ico { margin-right: 1px; }
 .chip.purpose span::before, .sheet .chip span::before { display: none; }
-.chips.purposes { margin-top: 0; gap: 6px; }
+.chips.purposes { margin: 14px 0 0; gap: 6px; }
 .chips.wrap { flex-wrap: wrap; overflow: visible; margin: 0; }
 .chips[hidden], .filter-n[hidden] { display: none; }
 .ico { font-style: normal; margin-right: 4px; }
@@ -85,6 +85,21 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .book-form input[type="search"] { flex: 1; min-width: 0; border: 1px solid var(--ink); background: var(--paper); outline: none; border-radius: 0; padding: 11px 14px; }
 .book-form button { border: 0; border-radius: 0; padding: 0 18px; font-weight: 700; cursor: pointer; background: var(--ink); color: var(--paper); }
 .book-note { margin: 6px 2px 0; font-size: 12px; }
+
+/* 도서관 유형: 눌러서 펼치는 토글 */
+.type-toggle {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin-top: 12px;
+  padding: 10px 14px; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); cursor: pointer; font-size: 14px; text-align: left;
+}
+.type-toggle b { flex: none; padding-right: 22px; position: relative; font-weight: 700; }
+.type-toggle b::after {
+  content: ""; position: absolute; right: 2px; top: 50%; width: 7px; height: 7px;
+  border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: translateY(-70%) rotate(45deg); transition: transform .2s;
+}
+.type-toggle[aria-expanded="true"] b::after { transform: translateY(-30%) rotate(-135deg); }
+.type-toggle:hover { background: var(--ink); color: var(--paper); }
+.type-toggle:hover b::after { border-color: var(--paper); }
+.type-toggle + .chips { margin-top: 10px; }
 
 /* ---------- 본문 ---------- */
 .main { flex: 1; min-height: 0; position: relative; display: flex; }
@@ -112,7 +127,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .name { font-family: var(--serif); font-weight: 900; font-size: 19px; line-height: 1.3; letter-spacing: -.02em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; align-self: flex-start; max-width: 100%; padding: 0 .1em; margin-left: -.1em; }
 .meta { font-size: 13px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .meta.hl { font-weight: 600; font-size: 14px; white-space: normal; line-height: 1.7; margin-top: 4px; }
-.meta.soon { font-size: 12px; font-style: italic; font-family: var(--serif); }
+.meta.soon { font-size: 12px; font-family: var(--serif); }
 .mini { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
 .mini span { flex: none; font-size: 12px; padding: 1px 9px; border: 1px solid var(--ink); border-radius: 999px; white-space: nowrap; }
 .mini span.top { background: var(--hl); color: #000; border-color: var(--ink); font-weight: 700; }
@@ -125,7 +140,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .st.closed, .st.unknown { font-weight: 400; }
 .st.closed::before, .st.unknown::before { content: "○"; }
 
-.empty { text-align: center; padding: 48px 0; font-family: var(--serif); font-style: italic; }
+.empty { text-align: center; padding: 48px 0; }
 .foot { font-size: 12px; text-align: center; padding: 28px 0 8px; }
 
 /* ---------- 하단 탭 (모바일) ---------- */
@@ -232,7 +247,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .sp-name { flex: 0 1 auto; }
 .sp-dots { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--ink); transform: translateY(-3px); }
 .sp-seats { font-size: 13px; font-variant-numeric: tabular-nums; }
-.sp-note { flex: 1 0 100%; font-size: 12.5px; font-style: italic; font-family: var(--serif); }
+.sp-note { flex: 1 0 100%; font-size: 12.5px; font-family: var(--serif); }
 
 /* ---------- 지도 (원래 색) ---------- */
 .leaflet-container { font-family: inherit; }
@@ -276,6 +291,8 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
   .title-row { margin: 0; }
   .search-row { flex: 1 1 280px; min-width: 240px; }
   .chips, .chips.wrap { margin: 0; }
+  .type-toggle { width: auto; margin-top: 0; }
+  .chips.purposes { margin: 0; }
   .book-form, .book-note { flex: 1 0 100%; margin-top: 0; }
   .sheet { left: auto; right: 0; top: 0; bottom: 0; width: 380px; max-height: none; border-top: 0; border-left: 2px solid var(--ink); }
   .main { flex-direction: row; }

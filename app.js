@@ -320,7 +320,13 @@
   }
 
   /* ---------- 렌더링 ---------- */
+  function updateTypeSummary() {
+    var sel = TYPE_ORDER.filter(function (t) { return state.types.has(t); });
+    $('typeSummary').textContent = !sel.length ? '선택 없음' : (sel.length === 1 ? sel[0] : sel[0] + ' 외 ' + (sel.length - 1));
+  }
+
   function render() {
+    updateTypeSummary();
     var list = filtered();
     var now = kstNow();
     $('count').textContent = list.length + '곳';
@@ -639,6 +645,11 @@
       var v = e.target.value;
       if (v !== 'near') { state.sort = v; render(); return; }
       locate(false, function () { e.target.value = state.sort; });
+    });
+    $('typeToggle').addEventListener('click', function () {
+      var open = $('types').hidden;
+      $('types').hidden = !open;
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
     $('bookToggle').addEventListener('click', function () {
       var open = $('bookForm').hidden;
