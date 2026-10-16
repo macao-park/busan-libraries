@@ -129,6 +129,8 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .mini span { flex: none; font-size: 12px; padding: 1px 9px; border: 1px solid var(--ink); border-radius: 999px; white-space: nowrap; }
 .mini span.top { background: var(--hl); color: #000; border-color: var(--ink); font-weight: 700; }
 .line2 { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 8px; font-size: 13px; }
+.seats { font-size: 13px; }
+.seats b { font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; }
 .dist { margin-left: auto; font-size: 13px; white-space: nowrap; }
 
 .badge { display: inline-block; padding: 1px 9px; border: 1px solid var(--ink); border-radius: 999px; font-size: 12px; font-weight: 700; }

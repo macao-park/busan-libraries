@@ -359,7 +359,9 @@
         '<div class="info">' +
           '<div class="name">' + esc(l.name) + '</div>' +
           showcase(l) +
-          '<div class="line2"><span class="st ' + st.cls + '">' + esc(st.label) + '</span>' +
+          '<div class="line2">' +
+            (l.seats ? '<span class="seats">열람좌석 <b>' + fmt(l.seats) + '</b>석</span>' : '') +
+            (st.cls === 'open' ? '' : '<span class="st ' + st.cls + '">' + esc(st.label) + '</span>') +
             (l._d != null && state.pos ? '<span class="dist">' + fmtDist(l._d) + '</span>' : '') +
           '</div>' +
         '</div>';
