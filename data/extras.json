@@ -164,6 +164,78 @@
           "seats": 52
         }
       ]
+    },
+    "강서도서관": {
+      "facilities": [
+        "식당·분식",
+        "조용한 열람실",
+        "노트북석",
+        "문화강좌실"
+      ],
+      "highlight": "지하 식당의 매주 식단표를 확인할 수 있어요",
+      "photos": [
+        "강서도서관_1.webp",
+        "강서도서관_2.webp",
+        "강서도서관_3.webp"
+      ],
+      "source": "https://library.bsgangseo.go.kr/gslib/",
+      "checked": "2026-10-16",
+      "links": [
+        {
+          "label": "이번 주 식단표",
+          "url": "https://library.bsgangseo.go.kr/gslib/index.php?g_page=guide&m_page=guide08_01"
+        }
+      ],
+      "spaces": [
+        {
+          "floor": "지하1층",
+          "name": "식당",
+          "note": "매주 식단표를 홈페이지에 공지해요"
+        },
+        {
+          "floor": "1층",
+          "name": "유아자료실"
+        },
+        {
+          "floor": "1층",
+          "name": "어린이자료실",
+          "seats": 63
+        },
+        {
+          "floor": "1층",
+          "name": "미디어아트체험관"
+        },
+        {
+          "floor": "2층",
+          "name": "종합자료실",
+          "seats": 39
+        },
+        {
+          "floor": "2층",
+          "name": "시청각실",
+          "seats": 30
+        },
+        {
+          "floor": "2층",
+          "name": "교양강좌실",
+          "seats": 21
+        },
+        {
+          "floor": "3층",
+          "name": "자유열람실",
+          "seats": 128
+        },
+        {
+          "floor": "3층",
+          "name": "전자정보실",
+          "seats": 17
+        },
+        {
+          "floor": "3층",
+          "name": "노트북코너",
+          "seats": 8
+        }
+      ]
     }
   },
   "additions": []

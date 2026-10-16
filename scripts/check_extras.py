@@ -44,6 +44,9 @@ def main():
             problems.append(f"[확인일] {name}: checked는 2026-10-07 형식이어야 합니다")
         if o.get("facilities") and not o.get("source"):
             print(f"  (참고) {name}: 출처(source)가 없습니다. 직접 확인한 정보라면 괜찮습니다")
+        for lk in o.get("links", []):
+            if not lk.get("label") or not re.match(r"^https?://", lk.get("url", "")):
+                problems.append(f"[링크] {name}: links 항목에는 label과 http(s) url이 필요합니다 ({lk})")
         for sp in o.get("spaces", []):
             if not sp.get("floor") or not sp.get("name"):
                 problems.append(f"[공간] {name}: spaces 항목에는 floor와 name이 필요합니다 ({sp})")

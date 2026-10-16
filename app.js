@@ -142,6 +142,7 @@
         l.facilities = l.facilities || [];
         l.photos = l.photos || [];
         l.spaces = l.spaces || [];
+        l.links = l.links || [];
       });
       libs = list;
     });
@@ -494,6 +495,14 @@
       }).join('') + '</details>';
   }
 
+  function linksHTML(l) {
+    var items = l.links.map(function (k) {
+      var u = safeUrl(k.url);
+      return u ? '<a class="btn" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(k.label) + '</a>' : '';
+    }).join('');
+    return items ? '<div class="actions sec-links">' + items + '</div>' : '';
+  }
+
   function detailHTML(l) {
     var st = status(l);
     var c = parseClosed(l.closed);
@@ -555,7 +564,7 @@
         '<dt>전화</dt><dd>' + (l.phone ? '<a href="tel:' + esc(l.phone.replace(/[^0-9+]/g, '')) + '">' + esc(l.phone) + '</a>' : '-') + '</dd>' +
         '<dt>운영기관</dt><dd>' + esc(l.org || '-') + '</dd>' +
       '</dl></div>' +
-      '<div class="sec"><h3>부대시설</h3>' + fac + spacesHTML(l) + src + report + '</div>' +
+      '<div class="sec"><h3>부대시설</h3>' + fac + linksHTML(l) + spacesHTML(l) + src + report + '</div>' +
       '<div class="sec"><h3>규모</h3><div class="stats">' +
         '<div class="stat"><b>' + fmt(l.seats) + '</b><span>열람좌석</span></div>' +
         '<div class="stat"><b>' + fmt(l.books) + '</b><span>장서(권)</span></div>' +

@@ -246,6 +246,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .sp-name { flex: 0 1 auto; }
 .sp-dots { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--ink); transform: translateY(-3px); }
 .sp-seats { font-size: 13px; font-variant-numeric: tabular-nums; }
+.sec-links { margin: 12px 0 0; }
 .sp-note { flex: 1 0 100%; font-size: 12.5px; font-family: var(--serif); }
 
 /* ---------- 지도 (원래 색) ---------- */
