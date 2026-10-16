@@ -4,10 +4,10 @@
   /* ---------- 설정 ---------- */
   var TYPE_ORDER = ['공공도서관', '작은도서관', '어린이도서관', '전문도서관'];
   var TYPE_COLOR = {
-    '공공도서관': '#111111',
-    '작은도서관': '#6b6b6b',
-    '어린이도서관': '#a3a3a3',
-    '전문도서관': '#3a3a3a'
+    '공공도서관': '#0071e3',
+    '작은도서관': '#1fa855',
+    '어린이도서관': '#f08a00',
+    '전문도서관': '#a550d6'
   };
   var TYPE_ICON = { '공공도서관': '🏛', '작은도서관': '📖', '어린이도서관': '🧸', '전문도서관': '📚' };
   var DEFAULT_ON = ['공공도서관'];
@@ -377,7 +377,7 @@
       return (i < 0 ? 99 : i) - (j < 0 ? 99 : j);
     });
     var shown = top.slice(0, l.highlight ? 3 : 4);
-    return (l.highlight ? '<div class="meta hl">' + esc(l.highlight) + '</div>' : '') +
+    return (l.highlight ? '<div class="meta hl"><mark>' + esc(l.highlight) + '</mark></div>' : '') +
       '<div class="mini">' + shown.map(function (t, i) {
         return '<span class="' + (i === 0 && !l.highlight ? 'top' : '') + '">' + esc(t) + '</span>';
       }).join('') + (top.length > shown.length ? '<span>+' + (top.length - shown.length) + '</span>' : '') + '</div>';
@@ -478,7 +478,7 @@
       order.map(function (f) {
         return '<div class="floor"><b>' + esc(f) + '</b><ul>' + by[f].map(function (s) {
           return '<li><span class="sp-name">' + esc(s.name) + '</span>' +
-            (s.seats ? '<span class="sp-seats">' + fmt(s.seats) + '석</span>' : '') +
+            (s.seats ? '<span class="sp-dots"></span><span class="sp-seats">' + fmt(s.seats) + '석</span>' : '') +
             (s.note ? '<span class="sp-note">' + esc(s.note) + '</span>' : '') + '</li>';
         }).join('') + '</ul></div>';
       }).join('') + '</details>';
@@ -525,17 +525,17 @@
       '<div class="d-title">' + esc(l.name) + '</div>' +
       '<div class="d-sub" style="--dot:' + color(l.type) + '"><span class="badge">' + esc(l.type) + '</span>' +
         '<span class="st ' + st.cls + '">' + esc(st.label) + '</span></div>' +
-      (l.highlight ? '<p class="lead">' + esc(l.highlight) + '</p>' : '') +
+      (l.highlight ? '<p class="lead"><mark>' + esc(l.highlight) + '</mark></p>' : '') +
       photos +
       '<div class="actions">' +
         (url ? '<a class="btn primary" href="' + esc(url) + '" target="_blank" rel="noopener">홈페이지</a>'
              : '<span class="btn primary off">홈페이지 없음</span>') +
         '<a class="btn" href="' + esc(kakao) + '" target="_blank" rel="noopener">카카오맵 길찾기</a>' +
         '<a class="btn" href="' + esc(naver) + '" target="_blank" rel="noopener">네이버지도</a>' +
-        '<button class="btn" id="goMap" type="button" style="border:0;cursor:pointer">지도에서 보기</button>' +
+        '<button class="btn" id="goMap" type="button">지도에서 보기</button>' +
       '</div>' +
-      '<div class="sec"><h3>이용 안내</h3><dl class="kv">' +
-        '<dt>평일</dt><dd>' + esc(hr(h.weekday)) + '</dd>' +
+      '<div class="sec"><h3>이용 안내</h3>' +
+        '<p class="hours"><small>평일</small>' + esc(hr(h.weekday).replace(/\s*~\s*/, ' – ')) + '</p><dl class="kv">' +
         '<dt>토요일</dt><dd>' + esc(hr(h.sat)) + '</dd>' +
         '<dt>일·공휴일</dt><dd>' + esc(hr(h.holiday)) + '</dd>' +
         '<dt>휴관일</dt><dd>' + esc(l.closed || '-') + '</dd>' +
@@ -598,10 +598,10 @@
       $('sort').value = 'near';
       userLayer.clearLayers();
       L.circle([state.pos.lat, state.pos.lng], {
-        radius: Math.min(p.coords.accuracy || 0, 1500), color: '#111111', weight: 1, fillColor: '#111111', fillOpacity: 0.12, interactive: false
+        radius: Math.min(p.coords.accuracy || 0, 1500), color: '#0a84ff', weight: 1, fillColor: '#0a84ff', fillOpacity: 0.12, interactive: false
       }).addTo(userLayer);
       L.circleMarker([state.pos.lat, state.pos.lng], {
-        radius: 8, color: '#ffffff', weight: 3, fillColor: '#111111', fillOpacity: 1, interactive: false
+        radius: 8, color: '#ffffff', weight: 3, fillColor: '#0a84ff', fillOpacity: 1, interactive: false
       }).addTo(userLayer);
       render();
       if (pan) map.setView([state.pos.lat, state.pos.lng], 14);
