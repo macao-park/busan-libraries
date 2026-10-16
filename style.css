@@ -40,7 +40,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 }
 .search input::placeholder, .book-form input::placeholder { color: var(--ink); opacity: 1; }
 .search input:focus, .book-form input[type="search"]:focus { box-shadow: 0 0 0 2px var(--ink); }
-.chips { display: flex; gap: 8px; margin: 10px 0 8px; overflow-x: auto; scrollbar-width: none; }
+.chips { display: flex; gap: 8px; margin: 10px 0 8px; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; position: relative; }
 .chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
@@ -57,7 +57,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .chip.purpose i { font-size: 11px; }
 .chip.purpose .ico { margin-right: 1px; }
 .chip.purpose span::before, .sheet .chip span::before { display: none; }
-.chips.purposes { margin: 12px 0 0; gap: 6px; }
+.chips.purposes { margin: 12px 0 0; gap: 6px; flex-wrap: wrap; overflow: visible; }
 .chips.wrap { flex-wrap: wrap; overflow: visible; margin: 0; }
 .chips[hidden], .filter-n[hidden] { display: none; }
 .ico { font-style: normal; margin-right: 4px; }
@@ -309,3 +309,6 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 @media (prefers-reduced-motion: reduce) {
   .detail, .spaces summary, .sp-chev::after { transition: none; }
 }
+
+/* iOS는 글자 크기가 16px 미만인 입력칸을 누르면 화면을 확대해서 레이아웃이 깨져 보인다 */
+.search input, .book-form input[type="search"], .row select { font-size: 16px; }
