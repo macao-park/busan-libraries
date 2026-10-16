@@ -4,10 +4,10 @@
   /* ---------- 설정 ---------- */
   var TYPE_ORDER = ['공공도서관', '작은도서관', '어린이도서관', '전문도서관'];
   var TYPE_COLOR = {
-    '공공도서관': '#0071e3',
-    '작은도서관': '#1fa855',
-    '어린이도서관': '#f08a00',
-    '전문도서관': '#a550d6'
+    '공공도서관': '#111111',
+    '작은도서관': '#6b6b6b',
+    '어린이도서관': '#a3a3a3',
+    '전문도서관': '#3a3a3a'
   };
   var TYPE_ICON = { '공공도서관': '🏛', '작은도서관': '📖', '어린이도서관': '🧸', '전문도서관': '📚' };
   var DEFAULT_ON = ['공공도서관'];
@@ -598,10 +598,10 @@
       $('sort').value = 'near';
       userLayer.clearLayers();
       L.circle([state.pos.lat, state.pos.lng], {
-        radius: Math.min(p.coords.accuracy || 0, 1500), color: '#0a84ff', weight: 1, fillColor: '#0a84ff', fillOpacity: 0.12, interactive: false
+        radius: Math.min(p.coords.accuracy || 0, 1500), color: '#111111', weight: 1, fillColor: '#111111', fillOpacity: 0.12, interactive: false
       }).addTo(userLayer);
       L.circleMarker([state.pos.lat, state.pos.lng], {
-        radius: 8, color: '#ffffff', weight: 3, fillColor: '#0a84ff', fillOpacity: 1, interactive: false
+        radius: 8, color: '#ffffff', weight: 3, fillColor: '#111111', fillOpacity: 1, interactive: false
       }).addTo(userLayer);
       render();
       if (pan) map.setView([state.pos.lat, state.pos.lng], 14);
