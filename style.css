@@ -6,9 +6,7 @@
   --serif: var(--sans);
   --sans: "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --tabs-h: 64px;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --ink: #ffffff; --paper: #000000; }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -255,9 +253,6 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .locate-btn { display: grid; place-items: center; width: 40px; height: 40px; border: 2px solid var(--ink); border-radius: 0; cursor: pointer; background: var(--paper); color: var(--ink); }
 .locate-btn.busy { animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: .4; } }
-@media (prefers-color-scheme: dark) {
-  .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.92) contrast(.9); }
-}
 .leaflet-bar { border: 2px solid var(--ink) !important; box-shadow: none !important; border-radius: 0 !important; }
 .leaflet-bar a { background: var(--paper); color: var(--ink); border-bottom: 1px solid var(--ink); border-radius: 0 !important; }
 .leaflet-bar a:last-child { border-bottom: 0; }
