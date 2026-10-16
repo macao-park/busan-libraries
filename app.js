@@ -389,8 +389,8 @@
     });
     var shown = top.slice(0, l.highlight ? 3 : 4);
     return (l.highlight ? '<div class="meta hl"><mark>' + esc(l.highlight) + '</mark></div>' : '') +
-      '<div class="mini">' + shown.map(function (t, i) {
-        return '<span class="' + (i === 0 && !l.highlight ? 'top' : '') + '">' + esc(t) + '</span>';
+      '<div class="mini">' + shown.map(function (t) {
+        return '<span>' + esc(t) + '</span>';
       }).join('') + (top.length > shown.length ? '<span>+' + (top.length - shown.length) + '</span>' : '') + '</div>';
   }
 
