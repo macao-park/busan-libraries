@@ -37,6 +37,7 @@ body:
         - label: 영화 상영
         - label: 메이커스페이스
         - label: 미디어·VR
+        - label: 식당·분식
   - type: input
     id: highlight
     attributes:

@@ -347,15 +347,8 @@
           '<img class="thumb-img" src="' + esc(photoSrc(mainPhoto(l))) + '" alt="" loading="lazy"></div>' +
         '<div class="info">' +
           '<div class="name">' + esc(l.name) + '</div>' +
-          (l.highlight
-            ? '<div class="meta hl">' + esc(l.highlight) + '</div>'
-            : '<div class="meta">' + esc(l.address.replace(/^부산광역시\s*/, '')) + '</div>') +
-          (l.facilities.length
-            ? '<div class="mini">' + l.facilities.slice(0, 3).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') +
-              (l.facilities.length > 3 ? '<span>+' + (l.facilities.length - 3) + '</span>' : '') + '</div>'
-            : '') +
-          '<div class="line2"><span class="badge">' + esc(l.type) + '</span>' +
-            '<span class="st ' + st.cls + '">' + esc(st.label) + '</span>' +
+          showcase(l) +
+          '<div class="line2"><span class="st ' + st.cls + '">' + esc(st.label) + '</span>' +
             (l._d != null && state.pos ? '<span class="dist">' + fmtDist(l._d) + '</span>' : '') +
           '</div>' +
         '</div>';
@@ -365,6 +358,26 @@
     });
     ul.appendChild(frag);
     drawMarkers(list);
+  }
+
+  // 카드에서 먼저 보여줄 '자랑거리' 순서 (앞에 있을수록 우선)
+  var SHOWY = ['식당·분식', '영화 상영', '북카페', '테라스·정원·루프탑', '전시·공연', '미디어·VR', '메이커스페이스',
+    '큐레이션 서가', '스터디룸', '개인 칸막이석', '회의·토론실', '문화강좌실', '콘센트 좌석', '노트북석', '조용한 열람실',
+    '잡지·신문', '와이파이', '복사·인쇄', '주차'];
+  function showcase(l) {
+    if (!l.highlight && !l.facilities.length) {
+      return '<div class="meta">' + esc(l.address.replace(/^부산광역시\s*/, '')) + '</div>' +
+        '<div class="meta soon">부대시설 정보를 모으는 중이에요</div>';
+    }
+    var top = l.facilities.slice().sort(function (x, y) {
+      var i = SHOWY.indexOf(x), j = SHOWY.indexOf(y);
+      return (i < 0 ? 99 : i) - (j < 0 ? 99 : j);
+    });
+    var shown = top.slice(0, l.highlight ? 3 : 4);
+    return (l.highlight ? '<div class="meta hl">' + esc(l.highlight) + '</div>' : '') +
+      '<div class="mini">' + shown.map(function (t, i) {
+        return '<span class="' + (i === 0 && !l.highlight ? 'top' : '') + '">' + esc(t) + '</span>';
+      }).join('') + (top.length > shown.length ? '<span>+' + (top.length - shown.length) + '</span>' : '') + '</div>';
   }
 
   function drawMarkers(list) {

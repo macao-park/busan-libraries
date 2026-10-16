@@ -174,12 +174,15 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
 .line2 { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 13px; color: var(--sub); }
 .dist { margin-left: auto; color: var(--sub); font-size: 13px; white-space: nowrap; align-self: flex-end; }
 
-.meta.hl { color: var(--accent); font-weight: 500; }
+.meta.hl { color: var(--text); font-weight: 600; font-size: 14px; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.meta.soon { color: var(--sub); opacity: .75; font-size: 12px; }
 .mini { display: flex; gap: 4px; margin-top: 6px; overflow: hidden; }
+.mini { flex-wrap: wrap; }
 .mini span {
-  flex: none; font-size: 11px; padding: 1px 8px; border-radius: 999px; white-space: nowrap;
-  background: var(--bg); color: var(--sub);
+  flex: none; font-size: 12px; padding: 2px 9px; border-radius: 999px; white-space: nowrap;
+  background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent); font-weight: 500;
 }
+.mini span.top { background: var(--accent); color: #fff; }
 
 .badge {
   display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
