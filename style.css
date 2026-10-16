@@ -5,7 +5,7 @@
   --hl: #ffe94a;
   --serif: var(--sans);
   --sans: "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-  --tabs-h: 64px;
+  --tabs-h: 52px;
   color-scheme: light;
 }
 
@@ -57,7 +57,7 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .chip.purpose i { font-size: 11px; }
 .chip.purpose .ico { margin-right: 1px; }
 .chip.purpose span::before, .sheet .chip span::before { display: none; }
-.chips.purposes { margin: 14px 0 0; gap: 6px; }
+.chips.purposes { margin: 12px 0 0; gap: 6px; }
 .chips.wrap { flex-wrap: wrap; overflow: visible; margin: 0; }
 .chips[hidden], .filter-n[hidden] { display: none; }
 .ico { font-style: normal; margin-right: 4px; }
@@ -84,20 +84,19 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 .book-form button { border: 0; border-radius: 0; padding: 0 18px; font-weight: 700; cursor: pointer; background: var(--ink); color: var(--paper); }
 .book-note { margin: 6px 2px 0; font-size: 12px; }
 
-/* 도서관 유형: 눌러서 펼치는 토글 */
+/* 도서관 유형: 검색줄의 버튼 하나로 펼치는 토글 */
 .type-toggle {
-  display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; margin-top: 12px;
-  padding: 10px 14px; border: 1px solid var(--ink); border-radius: 0; background: var(--paper); cursor: pointer; font-size: 14px; text-align: left;
+  flex: none; display: flex; align-items: center; gap: 6px; padding: 0 14px; border: 1px solid var(--ink); border-radius: 0;
+  background: var(--paper); cursor: pointer; font-weight: 700; font-size: 14px;
 }
-.type-toggle b { flex: none; padding-right: 22px; position: relative; font-weight: 700; }
-.type-toggle b::after {
-  content: ""; position: absolute; right: 2px; top: 50%; width: 7px; height: 7px;
-  border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: translateY(-70%) rotate(45deg); transition: transform .2s;
+.type-toggle::after {
+  content: ""; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg); transition: transform .2s;
 }
-.type-toggle[aria-expanded="true"] b::after { transform: translateY(-30%) rotate(-135deg); }
+.type-toggle[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+.type-toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(-135deg); }
 .type-toggle:hover { background: var(--ink); color: var(--paper); }
-.type-toggle:hover b::after { border-color: var(--paper); }
-.type-toggle + .chips { margin-top: 10px; }
+.top > .chips#types { margin-top: 10px; }
 
 /* ---------- 본문 ---------- */
 .main { flex: 1; min-height: 0; position: relative; display: flex; }
@@ -144,9 +143,9 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
 /* ---------- 하단 탭 (모바일) ---------- */
 .tabs {
   position: fixed; left: 50%; bottom: calc(12px + env(safe-area-inset-bottom)); transform: translateX(-50%);
-  display: flex; padding: 3px; gap: 3px; background: var(--paper); border: 2px solid var(--ink); border-radius: 999px; z-index: 20;
+  display: flex; padding: 2px; gap: 2px; background: var(--paper); border: 1.5px solid var(--ink); border-radius: 999px; z-index: 20;
 }
-.tabs button { border: 0; background: none; padding: 8px 26px; border-radius: 999px; color: var(--ink); cursor: pointer; }
+.tabs button { border: 0; background: none; padding: 5px 16px; font-size: 13px; border-radius: 999px; color: var(--ink); cursor: pointer; }
 .tabs button.on { background: var(--ink); color: var(--paper); font-weight: 700; }
 
 /* ---------- 상세 ---------- */
@@ -286,7 +285,6 @@ h1 small { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-s
   .title-row { margin: 0; }
   .search-row { flex: 1 1 280px; min-width: 240px; }
   .chips, .chips.wrap { margin: 0; }
-  .type-toggle { width: auto; margin-top: 0; }
   .chips.purposes { margin: 0; }
   .book-form, .book-note { flex: 1 0 100%; margin-top: 0; }
   .sheet { left: auto; right: 0; top: 0; bottom: 0; width: 380px; max-height: none; border-top: 0; border-left: 2px solid var(--ink); }

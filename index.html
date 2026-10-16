@@ -19,14 +19,12 @@
       </div>
       <div class="search-row">
         <div class="search">
-          <input id="q" type="search" placeholder="도서관 이름, 주소 검색" autocomplete="off" aria-label="검색">
+          <input id="q" type="search" placeholder="이름·주소 검색" autocomplete="off" aria-label="검색">
         </div>
+        <button class="type-toggle" id="typeToggle" type="button" aria-expanded="false" aria-controls="types">유형<b class="filter-n" id="typeSummary" hidden></b></button>
         <button class="filter-btn" id="filterBtn" type="button" aria-haspopup="dialog">필터<span class="filter-n" id="filterN" hidden></span></button>
       </div>
       <div class="chips purposes" id="purposes" role="group" aria-label="이용 목적" hidden></div>
-      <button class="type-toggle" id="typeToggle" type="button" aria-expanded="false" aria-controls="types">
-        <span>도서관 유형</span><b id="typeSummary"></b>
-      </button>
       <div class="chips" id="types" role="group" aria-label="도서관 유형" hidden></div>
       <form class="book-form" id="bookForm" action="https://one-library.busan.go.kr/busanbooks/" method="get" target="_blank" rel="noopener" hidden>
         <input type="hidden" name="mode" value="tBookList">

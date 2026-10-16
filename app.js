@@ -321,8 +321,10 @@
 
   /* ---------- 렌더링 ---------- */
   function updateTypeSummary() {
-    var sel = TYPE_ORDER.filter(function (t) { return state.types.has(t); });
-    $('typeSummary').textContent = !sel.length ? '선택 없음' : (sel.length === 1 ? sel[0] : sel[0] + ' 외 ' + (sel.length - 1));
+    var n = TYPE_ORDER.filter(function (t) { return state.types.has(t); }).length;
+    var custom = !(n === 1 && state.types.has('공공도서관'));
+    $('typeSummary').hidden = !custom;
+    $('typeSummary').textContent = n;
   }
 
   function render() {
